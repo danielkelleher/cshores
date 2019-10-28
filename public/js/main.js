@@ -582,7 +582,7 @@
                 itemSelector: '.g_item'
             });
             // filters
-            $('.grid_filters').on('click', 'a', function (e) {
+            $('.grid_filters_old').on('click', 'a', function (e) {
                 e.preventDefault();
                 var filterValue = $(this).attr('data-filter');
                 $grid.isotope({
@@ -590,7 +590,7 @@
                 });
             });
             // active class
-            $('.grid_filters').each(function (i, buttonGroup) {
+            $('.grid_filters_old').each(function (i, buttonGroup) {
                 var $buttonGroup = $(buttonGroup);
                 $buttonGroup.on('click', 'a', function () {
                     $buttonGroup.find('.active').removeClass('active');
@@ -943,8 +943,8 @@
         function initialize() {
             var map;
             var panorama;
-            var var_latitude = 37.8614626; // Google Map Latitude
-            var var_longitude = 20.625886; // Google Map Longitude
+            var var_latitude = 27.236271; // Google Map Latitude
+            var var_longitude = -80.2204373; // Google Map Longitude
             var pin = 'images/icons/pin.svg';
 
             //Map pin-window details

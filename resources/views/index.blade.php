@@ -1,60 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-
-    <!-- ========== SEO ========== -->
-    <title>Hotel Zante</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-    <meta content="" name="author">
+@include('elements.title')
     
-    <!-- ========== FAVICON ========== -->
-    <link rel="apple-touch-icon-precomposed" href="images/favicon-apple.png" />
-	<link rel="icon" href="images/favicon.png">
+   @include('elements.headscript')
 
-    <!-- ========== STYLESHEETS ========== --> 
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="/revolution/css/layers.css" rel="stylesheet" type="text/css" />
-    <link href="/revolution/css/settings.css" rel="stylesheet" type="text/css" />
-    <link href="/revolution/css/navigation.css" rel="stylesheet" type="text/css" />
-    <link href="/css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/famfamfam-flags.css" rel="stylesheet" type="text/css">
-    <link href="/css/magnific-popup.css" rel="stylesheet" type="text/css">
-    <link href="/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/css/responsive.css" rel="stylesheet" type="text/css">
 
-    <!-- ========== ICON FONTS ========== -->
-    <link href="/fonts/font-awesome.min.css" rel="stylesheet">
-    <link href="/fonts/flaticon.css" rel="stylesheet">
-    
-    <!-- ========== GOOGLE FONTS ========== -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7cRaleway:400,500,600,700" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
     
-    <!-- ========== PRELOADER ========== -->
-    <div id="loading">
-        <div class="inner">
-            <div class="loading_effect">
-                <div class="object" id="object_one"></div>
-                <div class="object" id="object_two"></div>
-                <div class="object" id="object_three"></div>
-            </div>
-        </div>
-    </div>
+    @include('elements.preloader')
     
     <div class="wrapper">
         
@@ -68,7 +22,7 @@
                     <!-- SLIDE NR. 1 -->
                     <li data-transition="crossfade">
                         <!-- MAIN IMAGE -->
-                        <img src="images/slider/slider-1.jpg" 
+                        <img src="images/home/slider.jpg" 
                              alt="Image" 
                              title="slider_bg2"
                              data-bgposition="center center" 
@@ -81,26 +35,15 @@
                         <div class="tp-caption tp-resizeme"
                              data-x="center" 
                              data-hoffset="" 
-                             data-y="320" 
+                             data-y="120" 
                              data-voffset=""
                              data-responsive_offset="on" 
                              data-fontsize="['60','50','40','30']" 
                              data-lineheight="['60','50','40','30']"
                              data-whitespace="nowrap"
                              data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 5; color: #fff; font-weight: 900;"> WELCOME TO HOTEL ZANTE </div>
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="" 
-                             data-y="410" 
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-fontsize="16" 
-                             data-lineheight="16"
-                             data-whitespace="nowrap"
-                             data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; color: #fff;">Live Your Myth In Greece</div>
+                             style="z-index: 5; color: #fff; font-weight: 900;"><img src="images/logo-dark.png" /> </div>
+                        
                         <!-- LAYER NR. 3 -->
                         <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme"
                              data-x="center" 
@@ -166,7 +109,7 @@
                         </div>
                        <!-- LAYER NR. 7 -->
                        <a class="tp-caption button btn_blue" 
-                          href="booking-form.html"
+                          href="https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29"
                           data-x="center"
                           data-hoffset="-100"
                           data-y="480" 
@@ -179,7 +122,7 @@
                         </a>
                        <!-- LAYER NR. 8 -->
                        <a class="tp-caption button btn_yellow " 
-                          href="contact.html"
+                          href="contact-us"
                           data-x="center" 
                           data-hoffset="108"
                           data-y="480" 
@@ -190,279 +133,10 @@
                           data-frames='[{"delay":2400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                           style="z-index: 11;"><i class="fa fa-envelope-o" aria-hidden="true"></i>CONTACT US NOW
                         </a>
-                        <!-- LAYER NR. 9 -->
-                        <div class="tp-caption tp_m_title tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="" 
-                             data-y="200"
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-fontsize="['18','18','16','16']"
-                             data-lineheight="['18','18','16','16']"
-                             data-whitespace="nowrap"
-                             data-frames='[{"delay":1800,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <!-- LAYER NR. 10 -->
-                        <div class="tp-caption tp_m_title tp-resizeme"
-                             data-x="center"
-                             data-hoffset="" 
-                             data-y="240" 
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-fontsize="['25','25','18','18']" 
-                             data-lineheight="['25','25','18','18']"
-                             data-whitespace="nowrap"
-                             data-frames='[{"delay":1800,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            Star Luxury Hotel
-                        </div>
+                     
                     </li>
                     
-                    <!-- SLIDE NR. 2 -->
-                    <li data-transition="crossfade">
-                        <!-- MAIN IMAGE -->
-                        <img src="images/slider/slider-2.jpg" 
-                             alt="Image" 
-                             title="slider_bg2"
-                             data-bgposition="center center"
-                             data-bgfit="cover" 
-                             data-bgrepeat="no-repeat"
-                             data-bgparallax="10"
-                             class="rev-slidebg" 
-                             data-no-retina="">
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="" 
-                             data-y="320" 
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-fontsize="['60','50','40','25']" 
-                             data-lineheight="['60','50','40','25']"
-                             data-whitespace="nowrap"
-                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 5; color: #fff; font-weight: 900;">ENJOY YOUR HOLIDAYS IN ZANTE
-                        </div>
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-resizeme"
-                             data-x="center" 
-                             data-hoffset="" 
-                             data-y="410" 
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-fontsize="16" 
-                             data-lineheight="16"
-                             data-whitespace="nowrap"
-                             data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; color: #fff;">Navagio Beach
-                        </div>
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="-134" 
-                             data-y="414"
-                             data-voffset=""
-                             data-width="['100']" 
-                             data-height="['4']"
-                             data-transform_idle="o:1;" 
-                             data-transform_in="x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1500;e:Power3.easeOut;"
-                             data-transform_out="opacity:0;s:300;" 
-                             data-mask_in="x:[-100%];y:0;s:inherit;e:inherit;" 
-                             data-start="2000" 
-                             data-responsive_offset="on"
-                             style="z-index: 7;background: url(images/icons/wave_white.svg);"> 
-                        </div>
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="-134"
-                             data-y="418"
-                             data-voffset=""
-                             data-width="['100']" 
-                             data-height="['4']" 
-                             data-transform_idle="o:1;" 
-                             data-transform_in="x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1500;e:Power3.easeOut;"
-                             data-transform_out="opacity:0;s:300;" 
-                             data-mask_in="x:[-100%];y:0;s:inherit;e:inherit;"
-                             data-start="2100" 
-                             data-responsive_offset="on" 
-                             style="z-index: 8;background: url(images/icons/wave_white.svg);">
-                        </div>
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="134" 
-                             data-y="414"
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-width="['100']"
-                             data-height="['4']" 
-                             data-transform_idle="o:1;" 
-                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1500;e:Power3.easeOut;"
-                             data-transform_out="opacity:0;s:300;" 
-                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
-                             data-start="2000" 
-                             style="z-index: 9;background: url(images/icons/wave_white.svg);">
-                        </div>
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                             data-x="center"
-                             data-hoffset="134"
-                             data-y="418" 
-                             data-voffset=""
-                             data-width="['100']"
-                             data-height="['4']"
-                             data-transform_idle="o:1;" 
-                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1500;e:Power3.easeOut;"
-                             data-transform_out="opacity:0;s:300;" 
-                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
-                             data-start="2100" 
-                             data-responsive_offset="on" 
-                             style="z-index: 10;background: url(images/icons/wave_white.svg);">
-                        </div>
-                       <!-- LAYER NR. 7 -->
-                       <a class="tp-caption button btn_yellow" 
-                          href="booking-form.html"
-                          data-x="center" 
-                          data-hoffset="-100"
-                          data-y="480"
-                          data-voffset=""
-                          data-responsive_offset="on" 
-                          data-fontsize="14" 
-                          data-whitespace="nowrap"
-                          data-frames='[{"delay":2400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                          style="z-index: 11;"><i class="fa fa-calendar"></i>BOOK A ROOM NOW
-                        </a>  
-                        <!-- LAYER NR. 8 -->
-                        <a class="tp-caption button btn_yellow "
-                           href="contact.html"
-                           data-x="center" 
-                           data-hoffset="108"
-                           data-y="480" 
-                           data-voffset=""
-                           data-responsive_offset="on" 
-                           data-fontsize="14" 
-                           data-frames='[{"delay":2400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                           style="z-index: 11;"><i class="fa fa-envelope-o" aria-hidden="true"></i>CONTACT US NOW
-                        </a>
-                        <!-- LAYER NR. 9 -->
-                        <div class="tp-caption tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="" 
-                             data-y="200"
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-frames='[{"delay":1800,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 12;"><img src="images/logo_light.svg" width="200" alt="Image">
-                        </div>
-                    </li>
-                    
-                    <!-- SLIDE NR. 3 -->
-                    <li data-transition="crossfade">
-                        <!-- MAIN IMAGE -->
-                        <img src="images/slider/slider-3.jpg" 
-                             alt="Image" 
-                             title="slider_bg3"
-                             data-bgposition="center center"
-                             data-bgfit="cover" 
-                             data-bgrepeat="no-repeat"
-                             data-bgparallax="10" 
-                             class="rev-slidebg"
-                             data-no-retina="">
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="" 
-                             data-y="305" 
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-fontsize="['80','70','60','40']" 
-                             data-lineheight="['80','70','60','40']"
-                             data-whitespace="nowrap"
-                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 5; color: #fff; font-weight: 900;">TOUCH THE DREAM
-                        </div>
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset=""
-                             data-y="410"
-                             data-voffset=""
-                             data-responsive_offset="on" 
-                             data-fontsize="16" 
-                             data-lineheight="16"
-                             data-whitespace="nowrap"
-                             data-frames='[{"delay":1500,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; color: #fff;">Family Room from €89 per night
-                        </div>
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="-180" 
-                             data-y="414" 
-                             data-voffset=""
-                             data-width="['100']" 
-                             data-height="['4']" 
-                             data-transform_idle="o:1;" 
-                             data-transform_in="x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1000;e:Power3.easeOut;" 
-                             data-transform_out="opacity:0;s:300;" 
-                             data-mask_in="x:[-100%];y:0;s:inherit;e:inherit;"
-                             data-start="2300" 
-                             data-responsive_offset="on" 
-                             style="z-index: 7;background: url(images/icons/wave_white.svg);"> 
-                        </div>
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                             data-x="center"
-                             data-hoffset="-180" 
-                             data-y="418" 
-                             data-voffset=""
-                             data-width="['100']" 
-                             data-height="['4']" 
-                             data-transform_idle="o:1;" 
-                             data-transform_in="x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1000;e:Power3.easeOut;" 
-                             data-transform_out="opacity:0;s:300;"
-                             data-mask_in="x:[-100%];y:0;s:inherit;e:inherit;" 
-                             data-start="2400" 
-                             data-responsive_offset="on" 
-                             style="z-index: 8;background: url(images/icons/wave_white.svg);"> 
-                        </div>
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                             data-x="center"
-                             data-hoffset="180"
-                             data-y="414" 
-                             data-voffset=""
-                             data-width="['100']"
-                             data-height="['4']" 
-                             data-transform_idle="o:1;" 
-                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1000;e:Power3.easeOut;" 
-                             data-transform_out="opacity:0;s:300;" data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
-                             data-start="2300" 
-                             data-responsive_offset="on" 
-                             style="z-index: 9;background: url(images/icons/wave_white.svg);">
-                        </div>
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme" 
-                             data-x="center" 
-                             data-hoffset="180"
-                             data-y="418" 
-                             data-voffset=""
-                             data-width="['100']" 
-                             data-height="['4']" 
-                             data-transform_idle="o:1;" 
-                             data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;s:1000;e:Power3.easeOut;" 
-                             data-transform_out="opacity:0;s:300;" 
-                             data-mask_in="x:[100%];y:0;s:inherit;e:inherit;" 
-                             data-start="2400" 
-                             data-responsive_offset="on" 
-                             style="z-index: 10;background: url(images/icons/wave_white.svg);"> 
-                        </div>
-                    </li>
+                   
                     
                 </ul>
             </div>
@@ -483,14 +157,15 @@
                             </div>
                             <div class="col-md-2 md_p5">
                                 <div class="form-group">
-                                     <label>Room Type
-                                        <a href="#" title="Room Type" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select Room Type: Single Room, Double Room or Deluxe Room"> <i class="label_icon_info fa fa-info-circle"></i></a>
+                                     <label>Place
+                                        <a href="#" title="Place" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select a Property"> <i class="label_icon_info fa fa-info-circle"></i></a>
                                     </label>
                                     <div class="form_select">
-                                        <select name="booking-roomtype" class="form-control" title="Select Room Type" data-header="Room Type">
-                                            <option value="Single">Single Room</option>
-                                            <option value="Double">Double Room</option>
-                                            <option value="Deluxe">Deluxe Room</option>
+                                        <select name="booking-roomtype" class="form-control" title="Select Place" data-header="Place">
+                                            <option value="Caribbean Shores">Caribbean Shores Hotel</option>
+                                            <option value="Vacation Rentals">Vacation Rentals</option>
+                                            <option value="Landmark">Landmark</option>
+                                            <option value="Inland Resort">Inland Resort</option>
                                         </select>
                                     </div>
                                 </div>
@@ -564,8 +239,8 @@
                                 </div>
                             </div>
                             <div class="col-md-2 md_pl5">
-                                <button type="submit" class="button  btn_blue btn_full">FIND A DEAL</button>
-                                <div class="advanced_form_link"> <a href="/all/search"> Advanced Search</a> </div>
+                               <a href="/book-now/caribbean-shores"> <button type="button"  class="button  btn_blue btn_full">FIND A DEAL</button></a>
+                                <!--<div class="advanced_form_link"> <a href="/all/search"> Advanced Search</a> </div> -->
                             </div>
                         </form>
                     </div>
@@ -580,29 +255,29 @@
                         <div class="col-md-4">
                             <div id="about">
                                 <div class="main_title mt_wave a_left">
-                                    <h2>ABOUT HOTEL ZANTE</h2>
+                                    <h2>Welcome to Caribbean Shores</h2>
                                 </div>
-                                <p class="main_description a_left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                <p class="main_description a_left">With the perfect balance of offerings between short term rentals, hotels, motels, and even long term rental options, Caribbean Shores Properties proves time and time again to be one of the most convenient ways to book a getaway on the Treasure Coast. Whether you’re trying to beat cold weather, or just looking for some time away from everyday life, Caribbean Shores Properties has just the right option for you and your family in a quality-packed, budget friendly package. Located in the heart of South Florida, just north of Palm Beach International Airport.</p>
                             </div>
                         </div>
 
                         <div class="col-md-8">
                             <div id="rooms">
                                 <div class="main_title mt_wave a_left">
-                                    <h2>OUR FAVORITE ROOMS</h2>
+                                    <h2>FEATURED PLACES</h2>
                                 </div> 
-                                    <p class="main_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p> 
+                                    <p class="main_description">With multiple properties to choose from, you cannot go wrong. Check out some of our popular offerings.</p> 
                                 <div class="row">
                                     <div class="col-md-4">
                                         <article class="room">
                                             <figure>
-                                                <div class="price">€89 <span>/ night</span></div>
-                                                <a class="hover_effect h_blue h_link" href="room.html">
-                                                    <img src="images/rooms/single-room.jpg" class="img-responsive" alt="Image">
+                                                
+                                                <a class="hover_effect h_blue h_link" href="/caribbean-shores">
+                                                    <img src="images/featured/waterfront.jpg" class="img-responsive" alt="Image">
                                                 </a>
                                                 <figcaption>
-                                                    <h5><a href="room.html">Single Room</a></h5>
-                                                    <span class="f_right"><a href="rooms-list.html" class="button btn_xs btn_blue">VIEW DETAILS</a></span>
+                                                    <h5><a href="/caribbean-shores">Caribbean Shores</a></h5>
+                                                    <span class="f_right"><a href="/caribbean-shores" class="button btn_xs btn_blue">VIEW</a></span>
                                                 </figcaption>
                                             </figure>
                                         </article>
@@ -610,13 +285,13 @@
                                     <div class="col-md-4">
                                         <article class="room">
                                             <figure>
-                                                <div class="price">€129 <span>/ night</span></div>
-                                                <a class="hover_effect h_blue h_link" href="room.html">
-                                                    <img src="images/rooms/double-room.jpg" class="img-responsive" alt="Image">
+                                                
+                                                <a class="hover_effect h_blue h_link" href="/vacation-rentals">
+                                                    <img src="images/featured/vacation-rentals.jpg" class="img-responsive" alt="Image">
                                                 </a>
                                                 <figcaption>
-                                                    <h5><a href="room.html">Double Room</a></h5>
-                                                    <span class="f_right"><a href="room.html" class="button btn_xs btn_blue">VIEW DETAILS</a></span>
+                                                    <h5><a href="/vacation-rentals">Vacation Rentals</a></h5>
+                                                    <span class="f_right"><a href="/vacation-rentals" class="button btn_xs btn_blue">VIEW</a></span>
                                                 </figcaption>
                                             </figure>
                                         </article>
@@ -624,13 +299,13 @@
                                     <div class="col-md-4">
                                         <article class="room">
                                             <figure>
-                                                <div class="price"> € 189 <span>/ night</span></div>
-                                                <a class="hover_effect h_blue h_link" href="room.html">
-                                                    <img src="images/rooms/deluxe-room.jpg" class="img-responsive" alt="Image">
+                                               
+                                                <a class="hover_effect h_blue h_link" href="/inland-resort">
+                                                    <img src="images/featured/Inland Resort.jpg" class="img-responsive" style="height:180px !important;"alt="Image">
                                                 </a>
                                                 <figcaption>
-                                                    <h5><a href="room.html">Delux Room</a></h5>
-                                                    <span class="f_right"><a href="room.html" class="button btn_xs btn_blue">VIEW DETAILS</a></span>
+                                                    <h5><a href="/inland-resort">Inland Resort</a></h5>
+                                                    <span class="f_right"><a href="/inland-resort" class="button btn_xs btn_blue">VIEW </a></span>
                                                 </figcaption>
                                             </figure>
                                         </article>
@@ -647,17 +322,17 @@
             <section class="lightgrey_bg" id="features">
                 <div class="container">
                     <div class="main_title mt_wave a_center">
-                        <h2>OUR AWESOME SERVICES</h2>
+                        <h2>COMPLIMENTARY SERVICES</h2>
                     </div>
-                    <p class="main_description a_center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+                    <p class="main_description a_center"></p>
 
                     <div class="row">
                         <div class="col-md-7">
                             <div data-slider-id="features" id="features_slider" class="owl-carousel">
-                                <div><img src="images/restaurant.jpg" class="img-responsive" alt="Image"></div>
-                                <div><img src="images/spa.jpg" class="img-responsive" alt="Image"></div>
-                                <div><img src="images/conference.jpg" class="img-responsive" alt="Image"></div>
-                                <div><img src="images/swimming.jpg" class="img-responsive" alt="Image"></div>
+                                <div><img src="images/home/3.jpg" class="img-responsive" alt="Image"></div>
+                                <div><img src="images/home/1.jpg" class="img" alt="Image"></div>
+                                <div><img src="images/gallery/waterfront/Caribbean%20Shores-45.jpg" class="img-responsive" alt="Image"></div>
+                                
                             </div>
                         </div>
                         <div class="col-md-5">
@@ -665,31 +340,25 @@
                                 <div class="owl-thumb-item">
                                     <span class="media-left"><i class="flaticon-food"></i></span>
                                     <div class="media-body">
-                                        <h5>Restaurant</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                        <h5>Local Cuisine</h5>
+                                        <p>Complimentary breakfast, situated in downtown Jensen Beach surrounded by the best cuisine South Florida has to offer.</p>
                                     </div>
                                 </div>
                                 <div class="owl-thumb-item">
                                     <span class="media-left"><i class="flaticon-person"></i></span>
                                     <div class="media-body">
-                                        <h5>Spa - Beauty &amp; Health</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                                    </div>
-                                </div>
-                                <div class="owl-thumb-item">
-                                    <span class="media-left"><i class="flaticon-business"></i></span>
-                                    <div class="media-body">
-                                        <h5>Conference Room</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                        <h5>On the Water</h5>
+                                        <p>Bring your boat, some friends, and experience the Intercoastal waterway.</p>
                                     </div>
                                 </div>
                                 <div class="owl-thumb-item">
                                     <span class="media-left"><i class="flaticon-beach"></i></span>
                                     <div class="media-body">
                                         <h5>Swimming Pool</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                        <p>Relax and cool off with our beautiful pool.</p>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -700,97 +369,27 @@
             <section id="gallery" class="blue_bg">
                 <div class="container">
                     <div class="main_title mt_wave mt_white a_center">
-                        <h2>ZANTE GALLERY PHOTOS</h2>
+                        <h2>CARIBBEAN SHORES: IN PHOTOS</h2>
                     </div> 
-                        <p class="main_description md_white a_center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p> 
+                        <p class="main_description md_white a_center"></p> 
                 </div>
                 <div id="gallery_slider" class="owl-carousel image-gallery">
+                    <?php  $gallery = DB::table('gallery')->orderBy('id')->limit(7)->get(); ?>
+                    @foreach($gallery as $photo)
                     <!-- ITEM -->
                     <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/gallery/gallery1.jpg">
-                            <img src="images/gallery/gallery1.jpg" alt="Image">
+                        <a class="hover_effect h_yellow h_lightbox" href="images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}.jpg">
+                            <img src="images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}.jpg" alt="Image">
                         </a>
-                        <div class="gallery_item_info">
-                            <h4>Rooms Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
-                        </div>
+                        
                     </div>
-                    <!-- ITEM -->
-                    <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/gallery/gallery2.jpg">
-                            <img src="images/gallery/gallery2.jpg" alt="Image">
-                        </a>
-                        <div class="gallery_item_info">
-                            <h4>Rooms Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
-                        </div>
-                    </div>
-                    <!-- ITEM -->
-                    <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/gallery/gallery3.jpg">
-                            <img src="images/gallery/gallery3.jpg" alt="Image">
-                        </a>
-                        <div class="gallery_item_info">
-                            <h4>Rooms Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
-                        </div>
-                    </div>
-                    <!-- ITEM -->
-                    <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/gallery/gallery4.jpg">
-                            <img src="images/gallery/gallery4.jpg" alt="Image">
-                        </a>
-                        <div class="gallery_item_info">
-                            <h4>Rooms Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
-                        </div>
-                    </div>
-                    <!-- ITEM -->
-                    <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/gallery/gallery5.jpg">
-                            <img src="images/gallery/gallery5.jpg" alt="Image">
-                        </a>
-                        <div class="gallery_item_info">
-                            <h4>Rooms Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
-                        </div>
-                    </div>
-                    <!-- ITEM -->
-                    <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/gallery/gallery6.jpg">
-                            <img src="images/gallery/gallery6.jpg" alt="Image">
-                        </a>
-                        <div class="gallery_item_info">
-                            <h4>Rooms Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
-                        </div>
-                    </div>
-                    <!-- ITEM -->
-                    <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/gallery/gallery7.jpg">
-                            <img src="images/gallery/gallery7.jpg" alt="Image">
-                        </a>
-                        <div class="gallery_item_info">
-                            <h4>Rooms Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
-                        </div>
-                    </div>
-                    <!-- ITEM -->
-                    <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/gallery/gallery8.jpg">
-                            <img src="images/gallery/gallery8.jpg" alt="Image">
-                        </a>
-                        <div class="gallery_item_info">
-                            <h4>Rooms Service</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing</p>
-                        </div>
-                    </div>
-                    <!-- END ITEM -->
+                    @endforeach
+                   
                 </div>
 
                 <div class="container">
                     <div class="mt40 a_center">
-                        <a class="button btn_sm btn_dark upper" href="gallery.html">View Full Gallery</a>
+                        <a class="button btn_sm btn_dark upper" href="/gallery">View Full Gallery</a>
                     </div>
                 </div>
 
@@ -800,9 +399,9 @@
             <section id="testimonials_style_2" class="grey_bg">
                 <div class="container">
                     <div class="main_title mt_wave a_center">
-                        <h2>WHAT PEOPLE SAY ABOUT US</h2>
+                        <h2>OUR GUESTS LOVE US</h2>
                     </div> 
-                        <p class="main_description a_center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p> 
+                        <p class="main_description a_center"></p> 
                     <div class="row">
                         <!-- ITEM -->
                         <div class="col-md-4">
@@ -883,7 +482,7 @@
                     <div class="main_title mt_wave a_center">
                         <h2>LOCATION - CONTACT US</h2>
                     </div> 
-                        <p class="main_description a_center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p> 
+                        
                     <div class="row">
                         <div class="col-md-6">
                             <div id="map-canvas"></div>
@@ -894,7 +493,7 @@
                                     <div class="col-md-4 col-sm-4">
                                         <div class="contact-item">
                                             <i class="glyphicon glyphicon-map-marker"></i>
-                                            <h6>Navagio Zakynthos</h6>
+                                            <h6>Jensen Beach, Florida</h6>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4">
@@ -905,8 +504,8 @@
                                     </div>
                                     <div class="col-md-4 col-sm-4">
                                         <div class="contact-item">
-                                            <i class="fa fa-envelope"></i>
-                                            <h6>contact@site.com</h6>
+                                            
+                                            <h6>contact@caribbeanshoresfl.com</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -952,47 +551,9 @@
     
     </div>
 
-    <!-- ========== BACK TO TOP ========== -->
-    <div id="back_to_top">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
-    </div>
+    @include('elements.footscript')
 
-    <!-- ========== NOTIFICATION ========== -->
-    <div id="notification"></div>
-
-    <!-- ========== JAVASCRIPT ========== -->
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap-select.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.smoothState.js"></script>
-    <script type="text/javascript" src="/js/moment.min.js"></script>
-    <script type="text/javascript" src="/js/morphext.min.js"></script>
-    <script type="text/javascript" src="/js/wow.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="/js/owl.carousel.thumbs.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="/js/jPushMenu.js"></script>
-    <script type="text/javascript" src="/js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="/js/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="/js/countUp.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-
-    <!-- ========== REVOLUTION SLIDER ========== -->
-    <script type="text/javascript" src="/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="/revolution/js/extensions/revolution.extension.video.min.js"></script>
+   @include('elements.revel')
 
 </body>
 </html>

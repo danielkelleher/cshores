@@ -8,8 +8,8 @@ if($_POST)
     ##################################################################################################################
 
     //MailChimp Settings
-	$api_key = "db1e30f89a0a71280689eadeceec5146-us10"; //MailChimp API Key
-	$list_id = "ea7b16d0a9"; //List ID
+	$api_key = "eafb469aed7b462c16e0e9ca3e6739ab-us20"; //MailChimp API Key
+	$list_id = "dbba789608"; //List ID
 
     // Output Messages
     $success_mssg   = "Thank you, you have been added to our mailing list."; 

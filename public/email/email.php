@@ -5,7 +5,7 @@ if($_POST)
     
     // Email Settings
     $site_title     = "Hotel Zante";
-    $to_email       = "noreply@eagle-themes.com"; 
+    $to_email       = "noreply@localhost"; 
     $subject        = "Hotel Zante - New Message"; 
     
     // Output Messages
