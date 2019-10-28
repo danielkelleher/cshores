@@ -301,7 +301,7 @@
                                             <figure>
                                                
                                                 <a class="hover_effect h_blue h_link" href="/inland-resort">
-                                                    <img src="images/featured/Inland Resort.jpg" class="img-responsive" style="height:180px !important;"alt="Image">
+                                                    <img src="images/featured/Inland-Resort.jpg" class="img-responsive" style="height:180px !important;"alt="Image">
                                                 </a>
                                                 <figcaption>
                                                     <h5><a href="/inland-resort">Inland Resort</a></h5>
