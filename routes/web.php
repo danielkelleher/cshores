@@ -21,8 +21,12 @@ Route::get('/about', function () {
 Route::get('/gallery','GalleryController@index');
 Route::get('{property}/photos','GalleryController@property');
 Route::get('{property}/rooms','RoomsController@property');
+Route::get('{property}/guestbook','GuestbookController@property');
 
 
+Route::get('book-now', function () {
+    return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29');
+});
 Route::get('book-now/caribbean-shores', function () {
     return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29');
 });
@@ -37,8 +41,15 @@ Route::get('book-now/inland-resort', function () {
 });
 
 
+Route::get('/guestbook', 'GuestbookController@index');
 
 
+Route::get('/caribbean-shores/about', function () {
+    return view('about-car')->with('title','About Caribbean Shores');
+});
+Route::get('/landmark/about', function () {
+    return view('about-lan')->with('title','About Landmark Motel');
+});
 
 Route::get('/contact-us', function () {
     return view('contact')->with('title','Contact Us');
