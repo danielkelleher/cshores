@@ -142,125 +142,7 @@
             </div>
         
              <!-- ========== HORIZONTAL BOOKING FORM ========== -->
-             <div class="hbf">
-                <div class="container">
-                    <div class="inner">
-                        <form id="booking-form">
-
-                          <!--   <div class="col-md-2 md_pr5">
-                                <div class="form-group">
-                                    <label>Your Email
-                                        <a href="#" title="Your Email" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Type Your Email"> <i class="label_icon_info fa fa-info-circle"></i></a>
-                                    </label>
-                                    <input class="form-control" name="booking-email" type="email" placeholder="Your Email Address">
-                                </div>
-                            </div>
-                            <div class="col-md-2 md_p5">
-                                <div class="form-group">
-                                     <label>Place
-                                        <a href="#" title="Place" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select a Property"> <i class="label_icon_info fa fa-info-circle"></i></a>
-                                    </label>
-                                    <div class="form_select">
-                                        <select name="booking-roomtype" class="form-control" title="Select Place" data-header="Place">
-                                            <option value="Caribbean Shores">Caribbean Shores Hotel</option>
-                                            <option value="Vacation Rentals">Vacation Rentals</option>
-                                            <option value="Landmark">Landmark</option>
-                                            <option value="Inland Resort">Inland Resort</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="row">
-
-                                    <div class="col-md-6 col-sm-6 arrival_date md_pl5 md_nopadding_right">
-                                        <div class="form-group">
-                                             <label>Arrival
-                                                <a href="#" title="Arrival" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Check In from 11:00 am"> <i class="label_icon_info fa fa-info-circle"></i></a>
-                                            </label>
-
-                                            <div class="form_date">
-                                                <input type="text" class="datepicker form-control md_noborder_right" name="booking-checkin" placeholder="Arrival Date" readonly>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 col-sm-6 departure_date md_pr5 md_nopadding_left">
-                                        <div class="form-group">
-                                             <label>Departure
-                                                <a href="#" title="Departure" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Check Out from 12:00 am"> <i class="label_icon_info fa fa-info-circle"></i></a>
-                                            </label>
-                                            <div class="form_date departure">
-                                                <input type="text" class="datepicker form-control" name="booking-checkout" placeholder="Departure Date" readonly>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="row">
-
-                                    <div class="col-md-6 col-sm-6 adults md_pl5 md_nopadding_right">
-                                        <div class="form-group">
-                                            <label>Adults
-                                                <a href="#" title="Adults" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="+18 years"> <i class="label_icon_info fa fa-info-circle"></i></a>
-                                            </label>
-                                            <div class="form_select">
-                                                <select name="booking-adults" class="form-control md_noborder_right" title="Adults" data-header="Adults">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 children md_pr5 md_nopadding_left">
-                                        <div class="form-group">
-                                             <label>Children
-                                                <a href="#" title="Children" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="0-18 years"> <i class="label_icon_info fa fa-info-circle"></i></a>
-                                            </label>
-                                            <div class="form_select children_select">
-                                                <select name="booking-children" class="form-control" title="Children" data-header="Children">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                           
-                             <div class="col-md-4 ">
-                               <a href="/book-now/caribbean-shores"> <button type="button"  class="button  btn_blue btn_full">Book Caribbean Shores</button></a>
-                                <!--<div class="advanced_form_link"> <a href="/all/search"> Advanced Search</a> </div> -->
-                            </div>
-                          
-
-                             <div class="col-md-4 ">
-                               <a href="/book-now/landmark"> <button type="button"  class="button  btn_blue btn_full">Book Landmark</button></a>
-                                <!--<div class="advanced_form_link"> <a href="/all/search"> Advanced Search</a> </div> -->
-                            </div>
-                            
-                             <div class="col-md-4 ">
-                               <a href="/book-now/vacation-rentals"> <button type="button"  class="button  btn_blue btn_full">Book Vacation Rentals</button></a>
-                                <!--<div class="advanced_form_link"> <a href="/all/search"> Advanced Search</a> </div> -->
-                            </div>
-                            
-                            
-                            
-                        </form>
-                    </div>
-                </div>
-            </div>
+             
 
             <!-- ========== ABOUT & ROOMS ========== -->
             <section id="about_rooms">
@@ -296,6 +178,11 @@
                                                 </figcaption>
                                             </figure>
                                         </article>
+                                        <ul class="list-inline">
+   <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">FB</a></li>
+   <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">G+</a></li>
+   <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">T</a></li>
+</ul>
                                     </div>
                                     <div class="col-md-4">
                                         <article class="room">
@@ -337,7 +224,7 @@
             <section class="lightgrey_bg" id="features">
                 <div class="container">
                     <div class="main_title mt_wave a_center">
-                        <h2>COMPLIMENTARY SERVICES</h2>
+                        <h2>AMENITIES</h2>
                     </div>
                     <p class="main_description a_center"></p>
 
@@ -548,9 +435,9 @@
                 <div class="inner">
                     <div class="container">
                         <div class="main_title mt_wave mt_white a_center">
-                            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                            <h2>SIGN UP FOR EXCLUSIVE DEALS</h2>
                         </div>
-                        <p class="main_description md_white a_center">Subscribe to our newsletter to receive exclusive offers and the latest news.</p>
+                        <p class="main_description md_white a_center">Sign up with you email address below to receive deals before anyone else!</p>
                         <form id="subscribe-form" name="subscribe">
                             <div class="form-group">
                                 <input type="email" name="subscribe-email" class="form-control" placeholder="Enter your email">
