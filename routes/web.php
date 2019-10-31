@@ -54,13 +54,16 @@ Route::get('/guestbook', 'GuestbookController@index');
 
 
 Route::get('/caribbean-shores/about', function () {
-    return view('about-car')->with('title','About Caribbean Shores');
+    return view('about-car')->with('title','About Waterfront Resort');
 });
 Route::get('/landmark/about', function () {
     return view('about-lan')->with('title','About Landmark Motel');
 });
+Route::get('/vacation-rentals/about', function () {
+    return view('abaout-vr')->with('title','About Vacation Rentals');
+});
 Route::get('/inland-resort/about', function () {
-    return view('about-inland')->with('title','About Inland Resort');
+    return view('about-inland')->with('title','About RV Park');
 });
 
 Route::get('/contact-us', function () {

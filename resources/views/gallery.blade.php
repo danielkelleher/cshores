@@ -30,10 +30,10 @@
             <div class="container">
                 <div class="grid_filters">
                     <a href="/gallery"  class="button btn_sm btn_blue {{ request()->is('gallery') ? 'active ' : '' }}">All Properties</a>
-                    <a href="/caribbean-shores/photos" class="button btn_sm btn_blue {{ request()->is('caribbean-shores/photos') ? 'active ' : '' }}">Caribbean Shores</a>
-                    <a href="/landmark/photos" class="button btn_sm btn_blue {{ request()->is('landmark/photos') ? 'active ' : '' }}">Landmark Hotel</a>
+                    <a href="/caribbean-shores/photos" class="button btn_sm btn_blue {{ request()->is('caribbean-shores/photos') ? 'active ' : '' }}">Waterfront Resort</a>
+                    <a href="/landmark/photos" class="button btn_sm btn_blue {{ request()->is('landmark/photos') ? 'active ' : '' }}">Jensen Beach Motel</a>
                     <a href="/vacation-rentals/photos" class="button btn_sm btn_blue {{ request()->is('vacation-rentals/photos') ? 'active ' : '' }}">Vacation Rentals</a>
-                    <a href="/inland-resort/photos" class="button btn_sm btn_blue {{ request()->is('inland-resort/photos') ? 'active ' : '' }}">Inland Resort</a>
+                    <a href="/inland-resort/photos" class="button btn_sm btn_blue {{ request()->is('inland-resort/photos') ? 'active ' : '' }}">RV Park</a>
                    
                 </div>
             </div>

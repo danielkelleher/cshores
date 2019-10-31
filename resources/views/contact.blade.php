@@ -16,7 +16,7 @@
         <!-- =========== GOOGLE MAP ========== -->
         <div id="map">
             <div id="google-map">
-                <button class="button  openmap-btn" id="openStreetView">Toggle Street View</button>
+                
             </div>
             <div id="map-canvas"></div>
         </div>
@@ -67,23 +67,20 @@
                         </div>
                         <ul class="contact-info upper">
                             <li>
-                                <span>ADDRESS:</span> Jensen Beach, Florida
+                                <span>ADDRESS:</span> 2580 NE Indian River Drive, Jensen Beach, Florida
                             </li>
                             <li>
-                                <span>EMAIL:</span> contact@caribbeanshoresfl.com
+                                <span>EMAIL:</span> contact@caribbeanshoresproperties.com
                             </li>
                             <li>
-                                <span>WEB:</span> www.caribbeanshoresfl.com
+                                <span>WEB:</span> www.caribbeanshoresproperties.com
                             </li>
                             <li>
-                                <span>PHONE:</span> +1 (800) <strong>555-5555</strong>
+                                <span>PHONE:</span> +1 772 <strong>919-1030</strong>
                             </li>
-                            <li>
-                                <span>FAX:</span>
-                                <strong>+1 772-555-5555</strong>
-                            </li>
+                            
                         </ul>
-                        <div class="social_media">
+                        <!-- <div class="social_media">
                             <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
                             <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
                             <a class="googleplus" href="#"><i class="fa fa-google-plus"></i></a>
@@ -91,7 +88,7 @@
                             <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
                             <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
                             <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

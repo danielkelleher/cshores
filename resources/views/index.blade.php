@@ -22,7 +22,7 @@
                     <!-- SLIDE NR. 1 -->
                     <li data-transition="crossfade">
                         <!-- MAIN IMAGE -->
-                        <img src="images/home/slider.jpg" 
+                        <img src="images/gallery/waterfront/Caribbean Shores-45s.jpg" 
                              alt="Image" 
                              title="slider_bg2"
                              data-bgposition="center center" 
@@ -108,7 +108,7 @@
                              style="z-index: 7;background: url(images/icons/wave_white.svg);">
                         </div>
                        <!-- LAYER NR. 7 -->
-                       <a class="tp-caption button btn_blue" 
+                      <!--  <a class="tp-caption button btn_blue" 
                           href="https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29"
                           data-x="center"
                           data-hoffset="-100"
@@ -119,13 +119,13 @@
                           data-whitespace="nowrap"
                           data-frames='[{"delay":2400,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                           style="z-index: 11;"><i class="fa fa-calendar"></i>BOOK A ROOM NOW
-                        </a>
+                        </a> -->
                        <!-- LAYER NR. 8 -->
                        <a class="tp-caption button btn_yellow " 
                           href="contact-us"
                           data-x="center" 
-                          data-hoffset="108"
-                          data-y="480" 
+                          data-hoffset="0"
+                          data-y="490" 
                           data-voffset=""
                           data-responsive_offset="on" 
                           data-fontsize="14"
@@ -169,20 +169,23 @@
                                         <article class="room">
                                             <figure>
                                                 
-                                                <a class="hover_effect h_blue h_link" href="/caribbean-shores">
+                                                <a class="hover_effect h_blue h_link" href="/caribbean-shores/about">
                                                     <img src="images/featured/waterfront.jpg" class="img-responsive" alt="Image">
                                                 </a>
                                                 <figcaption>
-                                                    <h5><a href="/caribbean-shores">Caribbean Shores</a></h5>
-                                                    <span class="f_right"><a href="/caribbean-shores" class="button btn_xs btn_blue">VIEW</a></span>
+                                                    <h5><a href="/caribbean-shores">Waterfront Resort</a></h5>
+                                                    <span class="f_right"><a href="/caribbean-shores/about" class="button btn_xs btn_blue">VIEW</a></span>
                                                 </figcaption>
                                             </figure>
-                                        </article>
+                                        </article><br />
                                         <ul class="list-inline">
-   <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">FB</a></li>
-   <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">G+</a></li>
-   <li class="list-inline-item"><a class="social-icon text-xs-center" target="_blank" href="#">T</a></li>
-</ul>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Waterfront</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
+<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
+<li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
+</ul><br>
+<center><a href="{{ env('APP_URL') }}/book-now/caribbean-shores" class="button  btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center>
                                     </div>
                                     <div class="col-md-4">
                                         <article class="room">
@@ -193,10 +196,18 @@
                                                 </a>
                                                 <figcaption>
                                                     <h5><a href="/vacation-rentals">Vacation Rentals</a></h5>
-                                                    <span class="f_right"><a href="/vacation-rentals" class="button btn_xs btn_blue">VIEW</a></span>
+                                                    <span class="f_right"><a href="/vacation-rentals/about" class="button btn_xs btn_blue">VIEW</a></span>
                                                 </figcaption>
                                             </figure>
-                                        </article>
+                                        </article><br />
+                                         <ul class="list-inline">
+   <li class="list-inline-item"><i class="fa fa-check"></i>Waterfront</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Pool access</li>
+<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
+<li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
+</ul><br>
+<center><a href="{{ env('APP_URL') }}/book-now/vacation-rentals" class="button  btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center>
                                     </div>
                                     <div class="col-md-4">
                                         <article class="room">
@@ -206,11 +217,20 @@
                                                     <img src="images/featured/Inland-Resort.JPG" class="img-responsive" style="height:180px !important;"alt="Image">
                                                 </a>
                                                 <figcaption>
-                                                    <h5><a href="/inland-resort">Inland Resort</a></h5>
-                                                    <span class="f_right"><a href="/inland-resort" class="button btn_xs btn_blue">VIEW </a></span>
+                                                    <h5><a href="/inland-resort/about">RV Park</a></h5>
+                                                    <span class="f_right"><a href="/inland-resort/about" class="button btn_xs btn_blue">VIEW </a></span>
                                                 </figcaption>
                                             </figure>
                                         </article>
+                                        <br />
+                                         <ul class="list-inline">
+   <li class="list-inline-item"><i class="fa fa-check"></i>Waterfront</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
+<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
+<li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
+</ul><br>
+<center><a href="{{ env('APP_URL') }}/book-now/inland-resort" class="button  btn_blue"><i class="fa fa-calendar"></i>BOOK ONLINE</a></center>
                                     </div>
                                 </div>
                             </div>
@@ -231,7 +251,7 @@
                     <div class="row">
                         <div class="col-md-7">
                             <div data-slider-id="features" id="features_slider" class="owl-carousel">
-                                <div><img src="images/home/3.jpg" class="img-responsive" alt="Image"></div>
+                                <div><img src="images/Jensen.jpg" class="img-responsive" alt="Image"></div>
                                 <div><img src="images/home/1.jpg" class="img" alt="Image"></div>
                                 <div><img src="images/gallery/waterfront/Caribbean%20Shores-45.jpg" class="img-responsive" alt="Image"></div>
                                 
@@ -240,10 +260,10 @@
                         <div class="col-md-5">
                             <div class="owl-thumbs" data-slider-id="features">
                                 <div class="owl-thumb-item">
-                                    <span class="media-left"><i class="flaticon-food"></i></span>
+                                    <span class="media-left"><i class="flaticon-plate"></i></span>
                                     <div class="media-body">
-                                        <h5>Local Cuisine</h5>
-                                        <p>Complimentary breakfast, situated in downtown Jensen Beach surrounded by the best cuisine South Florida has to offer.</p>
+                                        <h5>Local Activities</h5>
+                                        <p>Situated in downtown Jensen Beach surrounded by the best cuisine & activities South Florida has to offer.</p>
                                     </div>
                                 </div>
                                 <div class="owl-thumb-item">
@@ -271,21 +291,63 @@
             <section id="gallery" class="blue_bg">
                 <div class="container">
                     <div class="main_title mt_wave mt_white a_center">
-                        <h2>CARIBBEAN SHORES: IN PHOTOS</h2>
+                        <h2>CARIBBEAN SHORES PROPERTIES: IN PHOTOS</h2>
                     </div> 
                         <p class="main_description md_white a_center"></p> 
                 </div>
                 <div id="gallery_slider" class="owl-carousel image-gallery">
-                    <?php  $gallery = DB::table('gallery')->orderBy('id')->limit(7)->get(); ?>
-                    @foreach($gallery as $photo)
-                    <!-- ITEM -->
+                   
                     <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}.jpg">
-                            <img src="images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}.jpg" alt="Image">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront/Caribbean Shores-57.jpg">
+                            <img src="images/gallery/waterfront/Caribbean Shores-57.jpg" alt="Image">
                         </a>
+                        <div class="gallery_item_info">
+                            <h4>Caribbean Shores Waterfront Resort</h4>
+                           
+                        </div>
                         
                     </div>
-                    @endforeach
+                     <div class="item">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront/Caribbean Shores-38.jpg">
+                            <img src="/images/gallery/waterfront/Caribbean Shores-38.jpg" alt="Image">
+                        </a>
+                        <div class="gallery_item_info">
+                            <h4>Osperey Cottage</h4>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/landmark-f.jpg">
+                            <img src="/images//gallery/landmark-f.jpg"  style="height:255px !important; width:347px !important;" alt="Image">
+                        </a>
+                        <div class="gallery_item_info">
+                            <h4>Jensen Beach Motel</h4>
+                           
+                        </div>
+                        
+                    </div>
+                     <div class="item">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront/Caribbean Shores-38.jpg">
+                            <img src="/images/gallery/seagull-cottage.jpg" alt="Image" style="height:255px !important; width:347px !important;">
+                        </a>
+                        <div class="gallery_item_info">
+                            <h4>Seagull Cottage</h4>
+                           
+                        </div>
+                        
+                    </div>
+                     <div class="item">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-2.jpg">
+                            <img src="/images/gallery/inland-resort/Inland Resort-2.jpg" alt="Image" style="height:255px !important; width:347px !important;">
+                        </a>
+                        <div class="gallery_item_info">
+                            <h4>RV Park</h4>
+                           
+                        </div>
+                        
+                    </div>
+                   
                    
                 </div>
 
@@ -309,21 +371,15 @@
                         <div class="col-md-4">
                             <div class="review_item">
                                 <div class="review_content">
-                                    <h3>Excellent! </h3>
-                                    <div class="review_rating">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                                    <h3>"We would stay here again!"</h3>
+                                    
+                                    <p>The place was really clean and well taken care of. In a quiet area but a quick Uber ride to a lot of great bars and restaurants. We would stay here again. </p>
                                 </div>
                                 <div class="review_author">
-                                    <img src="images/users/user1.jpg" alt="Image">
+                                    <img src="images/users/user1.jpg" alt="Image" syle="height:50px !important; width:100px !important;">
                                     <div class="author_info">
-                                        <h5>John Doe</h5>
-                                        <span class="place">Athens, Greece</span>
+                                        <h5>Ashley</h5>
+                                        <span class="place">Tampa, FL</span>
                                     </div>
                                 </div>
                             </div>
@@ -332,21 +388,15 @@
                         <div class="col-md-4">
                             <div class="review_item">
                                 <div class="review_content">
-                                    <h3>Excellent! </h3>
-                                    <div class="review_rating">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                                    <h3>"Great for us..." </h3>
+                                    
+                                    <p>Great find for us. We were more than pleased. Great location, cozy with really nice yet simple decor. Will definitely come back.</p>
                                 </div>
                                 <div class="review_author">
                                     <img src="images/users/user2.jpg" alt="Image">
                                     <div class="author_info">
-                                        <h5>Ina Aldrich</h5>
-                                        <span class="place">Athens, Greece</span>
+                                        <h5>Lauri</h5>
+                                        <span class="place">Frisco, CO</span>
                                     </div>
                                 </div>
                             </div>
@@ -355,21 +405,15 @@
                         <div class="col-md-4">
                             <div class="review_item">
                                 <div class="review_content">
-                                    <h3>Excellent! </h3>
-                                    <div class="review_rating">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                                    <h3>"Highly recommend..." </h3>
+                                    
+                                    <p>Highly recommend. I stayed there for a long weekend and it was close to everything. Nice quiet neighborhood. Very clean room with large TV on the wall. Free laundry services if needed.</p>
                                 </div>
                                 <div class="review_author">
                                     <img src="images/users/user3.jpg" alt="Image">
                                     <div class="author_info">
-                                        <h5>William W.</h5>
-                                        <span class="place">Athens, Greece</span>
+                                        <h5>Timothy</h5>
+                                        <span class="place">Seymour, CT</span>
                                     </div>
                                 </div>
                             </div>
@@ -401,14 +445,16 @@
                                     <div class="col-md-4 col-sm-4">
                                         <div class="contact-item">
                                             <i class="glyphicon glyphicon-phone-alt"></i>
-                                            <h6>1-888-123-4567</h6>
+                                            <h6>1-772-919-1030</h6>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4">
-                                        <div class="contact-item">
-                                            
-                                            <h6>contact@caribbeanshoresfl.com</h6>
+                                        <a href="mailto:contact@caribbeanshoresproperties.com">
+                                            <div class="contact-item">
+                                            <i class="glyphicon glyphicon-envelope"></i>
+                                            <h6>Email Us!</h6>
                                         </div>
+                                    </a>
                                     </div>
                                 </div>
                             </div>

@@ -203,7 +203,7 @@
                             },
                             arrows: {
                                 style: "hermes",
-                                enable: true,
+                                enable: false,
                                 hide_onmobile: true,
                                 hide_under: 600,
                                 hide_onleave: true,
@@ -611,7 +611,7 @@
         /*========== GALLERY SLIDER ==========*/
         var owl = $('#gallery_slider');
         owl.owlCarousel({
-            loop: true,
+            loop: false,
             nav: false,
             margin: 10,
             responsive: {
@@ -948,11 +948,11 @@
             var pin = 'images/icons/pin.svg';
 
             //Map pin-window details
-            var title = "Hotel Zante - Click to see";
-            var hotel_name = "Hotel Zante";
-            var hotel_address = "25, Navagio Zakynthos, Greece";
-            var hotel_desc = "5 star deluxe Hotel";
-            var hotel_more_desc = "Lorem ipsum dolor sit amet, consectetur.";
+            var title = "Caribbean Shores Properties";
+            var hotel_name = "Caribbean Shores Properties";
+            var hotel_address = "2580 NE Indian River Drive, Jensen Beach";
+            var hotel_desc = "";
+            var hotel_more_desc = "";
 
             var hotel_location = new google.maps.LatLng(var_latitude, var_longitude);
             var mapOptions = {
