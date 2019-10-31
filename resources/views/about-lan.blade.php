@@ -26,7 +26,7 @@
         <div class="page_title gradient_overlay" style="background: url(images/page_title_bg.jpg);">
             <div class="container">
                 <div class="inner">
-                    <h1>Landmark Motel</h1>
+                    <h1>About Landmark Motel</h1>
                     <ol class="breadcrumb">
                         <li><a href="/">Home</a></li>
                         <li>Landmark Motel</li>

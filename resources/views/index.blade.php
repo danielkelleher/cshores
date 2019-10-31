@@ -147,7 +147,7 @@
                     <div class="inner">
                         <form id="booking-form">
 
-                            <div class="col-md-2 md_pr5">
+                          <!--   <div class="col-md-2 md_pr5">
                                 <div class="form-group">
                                     <label>Your Email
                                         <a href="#" title="Your Email" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Type Your Email"> <i class="label_icon_info fa fa-info-circle"></i></a>
@@ -237,11 +237,26 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-2 md_pl5">
-                               <a href="/book-now/caribbean-shores"> <button type="button"  class="button  btn_blue btn_full">FIND A DEAL</button></a>
+                            </div> -->
+                           
+                             <div class="col-md-4 ">
+                               <a href="/book-now/caribbean-shores"> <button type="button"  class="button  btn_blue btn_full">Book Caribbean Shores</button></a>
                                 <!--<div class="advanced_form_link"> <a href="/all/search"> Advanced Search</a> </div> -->
                             </div>
+                          
+
+                             <div class="col-md-4 ">
+                               <a href="/book-now/landmark"> <button type="button"  class="button  btn_blue btn_full">Book Landmark</button></a>
+                                <!--<div class="advanced_form_link"> <a href="/all/search"> Advanced Search</a> </div> -->
+                            </div>
+                            
+                             <div class="col-md-4 ">
+                               <a href="/book-now/vacation-rentals"> <button type="button"  class="button  btn_blue btn_full">Book Vacation Rentals</button></a>
+                                <!--<div class="advanced_form_link"> <a href="/all/search"> Advanced Search</a> </div> -->
+                            </div>
+                            
+                            
+                            
                         </form>
                     </div>
                 </div>

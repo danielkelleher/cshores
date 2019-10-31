@@ -31,16 +31,25 @@ Route::get('book-now/caribbean-shores', function () {
     return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29');
 });
 Route::get('book-now/landmark', function () {
-    return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29');
+    return redirect('https://hotels.cloudbeds.com/reservation/UI9XkQ');
 });
 Route::get('book-now/vacation-rentals', function () {
-    return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-30&checkout=2019-10-31');
+    return redirect('https://hotels.cloudbeds.com/reservation/W2eauH');
 });
 Route::get('book-now/inland-resort', function () {
     return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29');
 });
 
+Route::get('happenings', function () {
+    return view('happenings')->with('title','Local Events');
+});
 
+Route::get('happenings/post', function () {
+    return view('blog-post')->with('title','Local Events');
+});
+Route::get('room/{room}', function () {
+    return view('room')->with('title','Room Details');
+});
 Route::get('/guestbook', 'GuestbookController@index');
 
 
@@ -49,6 +58,9 @@ Route::get('/caribbean-shores/about', function () {
 });
 Route::get('/landmark/about', function () {
     return view('about-lan')->with('title','About Landmark Motel');
+});
+Route::get('/inland-resort/about', function () {
+    return view('about-inland')->with('title','About Inland Resort');
 });
 
 Route::get('/contact-us', function () {
