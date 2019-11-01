@@ -41,7 +41,7 @@
                                             </ul>
 
                                              <ul class="col-md-3">
-                                               <a href="{{ env('APP_URL') }}/landmark/about"> <img src="{{ env('APP_URL') }}/images/gallery/landmark/landmark-6.jpg" class="rounded thumbnail" style="height:100px !important; width: 100px !important;" />
+                                               <a href="{{ env('APP_URL') }}/landmark/about"> <img src="{{ env('APP_URL') }}/images/gallery/landmark/landmark-6.JPG" class="rounded thumbnail" style="height:100px !important; width: 100px !important;" />
                                                 <li class="list_title">Caribbean Shores: Jensen Beach Motel</li></a>
                                                
 
