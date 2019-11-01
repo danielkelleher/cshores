@@ -1,4 +1,4 @@
-c@include('elements.title')
+@include('elements.title')
     
    @include('elements.headscript')
 
