@@ -330,7 +330,7 @@
                     </div>
                      <div class="item">
                         <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-4.JPG">
-                            <img src="/images/gallery/seagull-cottage.jpg" alt="Image" style="height:255px !important; width:347px !important;">
+                            <img src="/images/gallery/inland-resort/Inland Resort-4.JPG" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
                             <h4>Seagull Cottage</h4>
