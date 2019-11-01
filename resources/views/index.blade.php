@@ -200,10 +200,10 @@
                                             </figure>
                                         </article><br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Apartments and Houses</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Spacious apartments</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>On the water</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Apartments and Houses</li><br />
+   <li class="list-inline-item"><i class="fa fa-check"></i>Spacious apartments</li><br />
+   <li class="list-inline-item"><i class="fa fa-check"></i>On the water</li><br />
+<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br />
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
 </ul><br>
 
@@ -225,10 +225,10 @@
                                         </article>
                                         <br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Rooms</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Suite style rooms</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Rooms</li><br/>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Suite style rooms</li><br/>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li><br>
+<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br>
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
 </ul><br>
 
