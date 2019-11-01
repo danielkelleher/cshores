@@ -160,22 +160,21 @@
 
                         <div class="col-md-8">
                             <div id="rooms">
-                                <div class="main_title mt_wave a_left">
-                                    <h2>FEATURED PLACES</h2>
-                                </div> 
-                                    <p class="main_description">With multiple properties to choose from, you cannot go wrong. Check out some of our popular offerings.</p> 
+                    
                                 <div class="row">
                                     <div class="col-md-4">
+                                        <center><a href="{{ env('APP_URL') }}/book-now/caribbean-shores" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center><br />
                                         <article class="room">
+
                                             <figure>
-                                                
-                                                <a class="hover_effect h_blue h_link" href="/caribbean-shores/about">
-                                                    <img src="images/featured/waterfront.jpg" class="img-responsive" alt="Image">
-                                                </a>
-                                                <figcaption>
-                                                    <h5><a href="/caribbean-shores">Waterfront Resort</a></h5>
-                                                    <span class="f_right"><a href="/caribbean-shores/about" class="button btn_xs btn_blue">VIEW</a></span>
+                                               <figcaption>
+                                                    <center><h5><a href="/caribbean-shores">Waterfront Resort</a></h5></center>
+                                                    
                                                 </figcaption>
+                                                <a class="hover_effect h_blue h_link" href="/caribbean-shores/about">
+                                                    <img src="images/gallery/waterfront/Caribbean%20Shores-57.jpg" class="img-responsive"  alt="Image">
+                                                </a>
+                                                
                                             </figure>
                                         </article><br />
                                         <ul class="list-inline">
@@ -185,41 +184,43 @@
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
 </ul><br>
-<center><a href="{{ env('APP_URL') }}/book-now/caribbean-shores" class="button  btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center>
+
                                     </div>
                                     <div class="col-md-4">
+                                        <center><a href="{{ env('APP_URL') }}/book-now/vacation-rentals" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center><br />
                                         <article class="room">
                                             <figure>
-                                                
-                                                <a class="hover_effect h_blue h_link" href="/vacation-rentals">
-                                                    <img src="images/featured/vacation-rentals.jpg" class="img-responsive" alt="Image">
-                                                </a>
                                                 <figcaption>
-                                                    <h5><a href="/vacation-rentals">Vacation Rentals</a></h5>
-                                                    <span class="f_right"><a href="/vacation-rentals/about" class="button btn_xs btn_blue">VIEW</a></span>
+                                                    <center><h5><a href="/vacation-rentals">Waterfront Rentals</a></h5></center>
                                                 </figcaption>
+                                                <a class="hover_effect h_blue h_link" href="/inland-resort/about">
+                                                    <img src="images/featured/Inland-Resort.JPG"  style="height:180px !important;" class="img-responsive" alt="Image">
+                                                </a>
+                                                
                                             </figure>
                                         </article><br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Waterfront</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i><b>Accomodation Type:</b> </li>
    <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
    <li class="list-inline-item"><i class="fa fa-check"></i>Pool access</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
 </ul><br>
-<center><a href="{{ env('APP_URL') }}/book-now/vacation-rentals" class="button  btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center>
+
                                     </div>
                                     <div class="col-md-4">
+                                        <center><a href="{{ env('APP_URL') }}/book-now/landmark" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center>
+                                        <br />
                                         <article class="room">
                                             <figure>
-                                               
-                                                <a class="hover_effect h_blue h_link" href="/inland-resort">
-                                                    <img src="images/featured/Inland-Resort.JPG" class="img-responsive" style="height:180px !important;"alt="Image">
-                                                </a>
-                                                <figcaption>
-                                                    <h5><a href="/inland-resort/about">RV Park</a></h5>
-                                                    <span class="f_right"><a href="/inland-resort/about" class="button btn_xs btn_blue">VIEW </a></span>
+                                               <figcaption>
+                                                    <center><h5><a href="/landmark/about">Jensen Beach Motel</a></h5></center>
+                                                    
                                                 </figcaption>
+                                                <a class="hover_effect h_blue h_link" href="/landmark/about">
+                                                    <img src="images/gallery/landmark/landmark-6.jpg" class="img-responsive" style="height:180px !important;"alt="Image">
+                                                </a>
+                                                
                                             </figure>
                                         </article>
                                         <br />
@@ -230,7 +231,7 @@
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
 </ul><br>
-<center><a href="{{ env('APP_URL') }}/book-now/inland-resort" class="button  btn_blue"><i class="fa fa-calendar"></i>BOOK ONLINE</a></center>
+
                                     </div>
                                 </div>
                             </div>
@@ -328,7 +329,7 @@
                         
                     </div>
                      <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront/Caribbean Shores-38.jpg">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-4.jpg">
                             <img src="/images/gallery/seagull-cottage.jpg" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
@@ -342,7 +343,7 @@
                             <img src="/images/gallery/inland-resort/Inland Resort-2.jpg" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
-                            <h4>RV Park</h4>
+                            <h4>Waterfront Resort</h4>
                            
                         </div>
                         

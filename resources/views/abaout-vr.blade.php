@@ -3,7 +3,16 @@
    @include('elements.headscript')
 
 
-
+<style type="text/css">
+       .BOOKNOW {
+position: fixed;
+right: -77px;
+top: 270px;
+transition: all 0.2s ease-in 0s;//this is the key attribute
+z-index: 9999;
+cursor: pointer;
+}
+   </style>
 </head>
 
 <body>
@@ -22,13 +31,15 @@
 
 
    
+
+  
         <!-- =========== PAGE TITLE ========== -->
         <div class="page_title gradient_overlay" style="background: url(images/page_title_bg.jpg);">
             <div class="container">
                 <div class="inner">
 
                     <h1>About Vacation Rentals</h1>
-                     <span class="f_right"> <a href="{{ env('APP_URL') }}/book-now/vacation-rentals" class="button  btn_blue"><i class="fa fa-calendar"></i>BOOK ONLINE</a></span>
+                    
                     <ol class="breadcrumb">
                         <li><a href="/">Home</a></li>
                         <li>Vacation Rentals</li>
@@ -172,7 +183,17 @@ Our cottages feature the same amazing waterfront views and are 2/2 or 1/2 with k
 
                 
         </main>
-
+ <div class=”BOOKNOW”><a href="{{ env('APP_URL') }}/book-now/caribbean-shores" class="button  btn_blue" style="-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: fixed;
+right: -50px;
+top: 270px;
+transition: all 0.2s ease-in 0s;//this is the key attribute
+z-index: 9999;
+cursor: pointer;"><i class="fa fa-calendar"></i>BOOK NOW</a></div>
         <!-- ========== FOOTER ========== -->
          @include('elements.footer')
         

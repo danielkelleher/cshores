@@ -28,21 +28,21 @@
                                     <div class="mega_menu_inner">
                                         <div class="row">
                                             <ul class="col-md-3">
-                                               <a href="{{ env('APP_URL') }}/caribbean-shores/about"> <img src="/images/gallery/waterfront/Caribbean Shores-1.jpg" class="rounded thumbnail" style="height:100px !important; width: 100px !important;" />
-                                                <li class="list_title">Waterfront Resort</li></a>
+                                               <a href="{{ env('APP_URL') }}/caribbean-shores/about"> <img src="{{ env('APP_URL') }}/images/gallery/waterfront/Caribbean Shores-1.jpg" class="rounded thumbnail" style="height:100px !important; width: 100px !important;" />
+                                                <li class="list_title">Caribbean Shores: Waterfront Resort</li></a>
                                                
 
                                             </ul>
                                              <ul class="col-md-3">
-                                               <a href="{{ env('APP_URL') }}/vacation-rentals/about"> <img src="/images/gallery/vacation-rentals/Caribbean Shores-54.jpg" class="rounded thumbnail" style="height:100px !important; width: 100px !important;" />
-                                                <li class="list_title">Vacation Rentals</li></a>
+                                               <a href="{{ env('APP_URL') }}/inland-resort/about"> <img src="{{ env('APP_URL') }}/images/featured/Inland-Resort.JPG" class="rounded thumbnail" style="height:100px !important; width: 100px !important;" />
+                                                <li class="list_title">Caribbean Shores: Waterfront Rentals</li></a>
                                                
 
                                             </ul>
 
                                              <ul class="col-md-3">
-                                               <a href="{{ env('APP_URL') }}/landmark/about"> <img src="/images/gallery/landmark/landmark-6.jpg" class="rounded thumbnail" style="height:100px !important; width: 100px !important;" />
-                                                <li class="list_title">Jensen Beach Motel</li></a>
+                                               <a href="{{ env('APP_URL') }}/landmark/about"> <img src="{{ env('APP_URL') }}/images/gallery/landmark/landmark-6.jpg" class="rounded thumbnail" style="height:100px !important; width: 100px !important;" />
+                                                <li class="list_title">Caribbean Shores: Jensen Beach Motel</li></a>
                                                
 
                                             </ul>
@@ -62,7 +62,7 @@
                         <li><a href="{{ env('APP_URL') }}/contact-us">CONTACT US</a></li>
                        <!-- <li><a href="{{ env('APP_URL') }}/happenings">HAPPENINGS</a></li>-->
                         <li class="menu_button">
-                            <a href="tel:7729191030" class="button  btn_blue"><i class="fa fa-phone"></i>(772) 919-1030</a>
+                            <a href="tel:7729191030" class="button btn_lrg btn_blue"><i class="fa fa-phone"></i>(772) 919-1030</a>
                         </li>
                     </ul>
                 </nav>
