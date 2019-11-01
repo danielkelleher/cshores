@@ -319,7 +319,7 @@
                         
                     </div>
                     <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/landmark-f.jpg">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/landmark-f.JPG">
                             <img src="/images//gallery/landmark-f.jpg"  style="height:255px !important; width:347px !important;" alt="Image">
                         </a>
                         <div class="gallery_item_info">
@@ -329,7 +329,7 @@
                         
                     </div>
                      <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-4.jpg">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-4.JPG">
                             <img src="/images/gallery/seagull-cottage.jpg" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
@@ -340,7 +340,7 @@
                     </div>
                      <div class="item">
                         <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-2.jpg">
-                            <img src="/images/gallery/inland-resort/Inland Resort-2.jpg" alt="Image" style="height:255px !important; width:347px !important;">
+                            <img src="/images/gallery/inland-resort/Inland Resort-2.JPG" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
                             <h4>Waterfront Resort</h4>
