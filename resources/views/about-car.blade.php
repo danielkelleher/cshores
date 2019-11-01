@@ -1,7 +1,16 @@
 @include('elements.title')
     
    @include('elements.headscript')
-
+<style type="text/css">
+       .BOOKNOW {
+position: fixed;
+right: -77px;
+top: 270px;
+transition: all 0.2s ease-in 0s;//this is the key attribute
+z-index: 9999;
+cursor: pointer;f
+}
+   </style>
 
 
 </head>
@@ -73,20 +82,18 @@ Our cottages feature the same amazing waterfront views and are 2/2 or 1/2 with k
                                                     <img src="{{ env('APP_URL') }}/images/gallery/waterfront/rooms/double-queen.jpg" class="img-responsive" alt="Image">
                                                 
                                                 <figcaption>
-                                                    <h5>Double Queen</h5>
+                                                    <h5>Deluxe</h5>
                                                     
                                                 </figcaption>
                                             </figure>
                                         </article><br />
                                         <ul class="list-inline">
    <li class="list-inline-item"><i class="fa fa-check"></i>Maximum Capacity: 5</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Lounge area</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Dinette</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Sleeper-sofa</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Mini-fridge</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>2 bathrooms</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Flat screen TV</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
+<li class="list-inline-item"><i class="fa fa-check"></i>Double Queen and Single King Rooms</li>
 </ul>
                                     </div>
                                     <div class="col-md-4">
@@ -174,7 +181,17 @@ Our cottages feature the same amazing waterfront views and are 2/2 or 1/2 with k
 
         <!-- ========== FOOTER ========== -->
          @include('elements.footer')
-        
+        <div class=”BOOKNOW”><a href="{{ env('APP_URL') }}/book-now/caribbean-shores" class="button  btn_blue" style="-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: fixed;
+right: -50px;
+top: 270px;
+transition: all 0.2s ease-in 0s;//this is the key attribute
+z-index: 9999;
+cursor: pointer;"><i class="fa fa-calendar"></i>BOOK NOW</a></div>
     </div>
 
      @include('elements.footscript')
