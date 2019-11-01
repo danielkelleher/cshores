@@ -261,7 +261,7 @@
                         <div class="col-md-5">
                             <div class="owl-thumbs" data-slider-id="features">
                                 <div class="owl-thumb-item">
-                                    <span class="media-left"><i class="flaticon-plate"></i></span>
+                                    <span class="media-left"><i class="flaticon-food"></i></span>
                                     <div class="media-body">
                                         <h5>Local Activities</h5>
                                         <p>Situated in downtown Jensen Beach surrounded by the best cuisine & activities South Florida has to offer.</p>
