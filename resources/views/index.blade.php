@@ -178,8 +178,8 @@
                                             </figure>
                                         </article><br />
                                         <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Waterfront</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Rooms and Cottages</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Suites</li>
    <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
@@ -200,9 +200,9 @@
                                             </figure>
                                         </article><br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i><b>Accomodation Type:</b> </li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Pool access</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Apartments and Houses</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Spacious apartments</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>On the water</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
 </ul><br>
@@ -218,15 +218,15 @@
                                                     
                                                 </figcaption>
                                                 <a class="hover_effect h_blue h_link" href="/landmark/about">
-                                                    <img src="images/gallery/landmark/landmark-6.jpg" class="img-responsive" style="height:180px !important;"alt="Image">
+                                                    <img src="images/gallery/landmark/landmark-6.JPG" class="img-responsive" style="height:180px !important;"alt="Image">
                                                 </a>
                                                 
                                             </figure>
                                         </article>
                                         <br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Waterfront</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Rooms</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Suite style rooms</li>
    <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
