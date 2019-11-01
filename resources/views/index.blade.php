@@ -320,7 +320,7 @@
                     </div>
                     <div class="item">
                         <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/landmark-f.JPG">
-                            <img src="/images//gallery/landmark-f.jpg"  style="height:255px !important; width:347px !important;" alt="Image">
+                            <img src="/images//gallery/landmark-f.JPG"  style="height:255px !important; width:347px !important;" alt="Image">
                         </a>
                         <div class="gallery_item_info">
                             <h4>Jensen Beach Motel</h4>
@@ -339,7 +339,7 @@
                         
                     </div>
                      <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-2.jpg">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-2.JPG">
                             <img src="/images/gallery/inland-resort/Inland Resort-2.JPG" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
