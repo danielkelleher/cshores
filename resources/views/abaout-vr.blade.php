@@ -10,7 +10,7 @@ right: -77px;
 top: 270px;
 transition: all 0.2s ease-in 0s;//this is the key attribute
 z-index: 9999;
-cursor: pointer;
+cursor: pointer;f
 }
    </style>
 </head>
@@ -164,8 +164,8 @@ Our cottages feature the same amazing waterfront views and are 2/2 or 1/2 with k
                         <?php $pictures = DB::table('gallery')->where('properties_id','3')->limit(7)->get(); ?>
                         @foreach ($pictures as $picture) 
                         <figure class="g_item col-md-3 col-sm-6 g_swimming_pool">
-                            <a href="/images/{{$picture->photo_dir}}{{$picture->photo_file_nm}}.jpg" class="hover_effect h_lightbox h_blue">
-                                <img src="/images/{{$picture->photo_dir}}{{$picture->photo_file_nm}}.jpg" class="img-responsive" alt="Image">
+                            <a href="/images/{{$picture->photo_dir}}{{$picture->photo_file_nm}}" class="hover_effect h_lightbox h_blue">
+                                <img src="/images/{{$picture->photo_dir}}{{$picture->photo_file_nm}}" class="img-responsive" alt="Image">
                             </a>
                         </figure>
                     @endforeach
