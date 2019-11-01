@@ -178,10 +178,10 @@
                                             </figure>
                                         </article><br />
                                         <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Rooms and Cottages</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Suites</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
+   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Rooms and Cottages</li><br />
+   <li class="list-inline-item"><i class="fa fa-check"></i>Suites</li><br />
+   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li><br />
+<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br />
 <li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
 </ul><br>
 
