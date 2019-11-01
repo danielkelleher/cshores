@@ -178,7 +178,7 @@
                                             </figure>
                                         </article><br />
                                         <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Rooms and Cottages</li><br />
+   <li class="list-inline-item"><i class="fa fa-check"></i><b>Rooms and Cottages</b></li><br />
    <li class="list-inline-item"><i class="fa fa-check"></i>Suites</li><br />
    <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li><br />
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br />
@@ -200,7 +200,7 @@
                                             </figure>
                                         </article><br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Apartments and Houses</li><br />
+   <li class="list-inline-item"><i class="fa fa-check"></i><b>Apartments and Houses</b></li><br />
    <li class="list-inline-item"><i class="fa fa-check"></i>Spacious apartments</li><br />
    <li class="list-inline-item"><i class="fa fa-check"></i>On the water</li><br />
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br />
@@ -225,7 +225,7 @@
                                         </article>
                                         <br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Accomodation Type: Rooms</li><br/>
+   <li class="list-inline-item"><i class="fa fa-check"></i><b>Rooms</b></li><br/>
    <li class="list-inline-item"><i class="fa fa-check"></i>Suite style rooms</li><br/>
    <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li><br>
 <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br>
