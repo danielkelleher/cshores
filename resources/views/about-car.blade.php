@@ -37,7 +37,7 @@ cursor: pointer;f
                 <div class="inner">
 
                     <h1>About Waterfront Resort</h1>
-                     <span class="f_right"> <a href="{{ env('APP_URL') }}/book-now/caribbean-shores" class="button  btn_blue"><i class="fa fa-calendar"></i>BOOK ONLINE</a></span>
+                     
                     <ol class="breadcrumb">
                         <li><a href="/">Home</a></li>
                         <li>Waterfront Resort</li>
