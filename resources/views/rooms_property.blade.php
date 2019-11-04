@@ -44,9 +44,9 @@
                           <div class="col-lg-6 col-md-12">
                              <a href="/room/{{$room->id}}" class="hover_effect h_link h_blue">
                               <?php
-                                $photos = DB::table('gallery')->where('rooms_id',$room->id)->limit(1)->get(); ?>
+                                $photos = DB::table('gallery')->where('rooms_id',$room->id)->inRandomOrder()->limit(1)->get(); ?>
                               @foreach($photos as $photo)
-                             <img src="/images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}.jpg" class="img-responsive" alt="Image">
+                             <img src="/images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}" class="img-responsive" alt="Image">
                              @endforeach
                              
                              </a>
@@ -54,7 +54,7 @@
                           <div class="col-lg-6 col-md-12">
                              <div class="room_info">
                                 <h3><a href="room.html">{{$room->room_name}}</a></h3>
-                                <span>${{$room->default_price}} / night</span>
+                                <span>${{$room->default_price}}/ night</span>
                                 <p>{{$room->description}}</p>
                                 <div class="room_services">
                                    <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i> 

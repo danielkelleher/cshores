@@ -8,7 +8,7 @@ class GalleryController extends Controller
 {
     public function index()
     {
-        $gallery = DB::table('gallery')->inRandomOrder()->get();
+        $gallery = DB::table('gallery')->where('properties_id','1')->inRandomOrder()->get();
 
         return view('gallery', ['pictures' => $gallery])->with('title','Gallery');
     }

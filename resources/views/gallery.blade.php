@@ -29,11 +29,10 @@
         <main id="gallery">
             <div class="container">
                 <div class="grid_filters">
-                    <a href="/gallery"  class="button btn_sm btn_blue {{ request()->is('gallery') ? 'active ' : '' }}">All Properties</a>
-                    <a href="/caribbean-shores/photos" class="button btn_sm btn_blue {{ request()->is('caribbean-shores/photos') ? 'active ' : '' }}">Waterfront Resort</a>
-                    <a href="/landmark/photos" class="button btn_sm btn_blue {{ request()->is('landmark/photos') ? 'active ' : '' }}">Jensen Beach Motel</a>
+                    <a href="/waterfront-resort/photos" class="button btn_sm btn_blue {{ request()->is('waterfront-resort/photos') ? 'active ' : '' }}">Waterfront Resort</a>
+                    <a href="/jensen-beach-motel/photos" class="button btn_sm btn_blue {{ request()->is('jensen-beach-motel/photos') ? 'active ' : '' }}">Jensen Beach Motel</a>
                     <a href="/vacation-rentals/photos" class="button btn_sm btn_blue {{ request()->is('vacation-rentals/photos') ? 'active ' : '' }}">Vacation Rentals</a>
-                    <a href="/inland-resort/photos" class="button btn_sm btn_blue {{ request()->is('inland-resort/photos') ? 'active ' : '' }}">RV Park</a>
+                    <a href="/waterfront-rentals/photos" class="button btn_sm btn_blue {{ request()->is('waterfront-rentals/photos') ? 'active ' : '' }}">Waterfront Rentals</a>
                    
                 </div>
             </div>

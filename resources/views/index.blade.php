@@ -22,7 +22,7 @@
                     <!-- SLIDE NR. 1 -->
                     <li data-transition="crossfade">
                         <!-- MAIN IMAGE -->
-                        <img src="images/gallery/waterfront/Caribbean Shores-45s.jpg" 
+                        <img src="images/Caribbean Shores-45s.jpg" 
                              alt="Image" 
                              title="slider_bg2"
                              data-bgposition="center center" 
@@ -149,21 +149,14 @@
                 <div class="container">
                     <div class="row">
                         
-                        <div class="col-md-4">
-                            <div id="about">
-                                <div class="main_title mt_wave a_left">
-                                    <h2>Welcome to Caribbean Shores</h2>
-                                </div>
-                                <p class="main_description a_left">With the perfect balance of offerings between short term rentals, hotels, motels, and even long term rental options, Caribbean Shores Properties proves time and time again to be one of the most convenient ways to book a getaway on the Treasure Coast. Whether you’re trying to beat cold weather, or just looking for some time away from everyday life, Caribbean Shores Properties has just the right option for you and your family in a quality-packed, budget friendly package. Located in the heart of South Florida, just north of Palm Beach International Airport.</p>
-                            </div>
-                        </div>
+                        
 
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div id="rooms">
                     
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <center><a href="{{ env('APP_URL') }}/book-now/caribbean-shores" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center><br />
+                                    <div class="col-md-3">
+                                        <center><a href="{{ env('APP_URL') }}/book-now/waterfront-resort" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center><br />
                                         <article class="room">
 
                                             <figure>
@@ -171,72 +164,91 @@
                                                     <center><h5><a href="/caribbean-shores">Waterfront Resort</a></h5></center>
                                                     
                                                 </figcaption>
-                                                <a class="hover_effect h_blue h_link" href="/caribbean-shores/about">
-                                                    <img src="images/gallery/waterfront/Caribbean%20Shores-57.jpg" class="img-responsive"  alt="Image">
+                                                <a class="hover_effect h_blue h_link" href="/waterfront-resort/about">
+                                                    <img src="images/gallery/waterfront-resort/58.jpg" style="height:180px !important;"  alt="Image">
                                                 </a>
                                                 
                                             </figure>
                                         </article><br />
                                         <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i><b>Rooms and Cottages</b></li><br />
-   <li class="list-inline-item"><i class="fa fa-check"></i>Suites</li><br />
-   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li><br />
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br />
-<li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
-</ul><br>
+                                           <li class="list-inline-item"> Accommodation Type: <b>Rooms and Cottages</b></li><br />
+                                          
+                                        </ul><br>
 
                                     </div>
-                                    <div class="col-md-4">
-                                        <center><a href="{{ env('APP_URL') }}/book-now/vacation-rentals" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center><br />
+                                    <div class="col-md-3">
+                                        <center><a href="{{ env('APP_URL') }}/book-now/waterfront-rentals" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center><br />
                                         <article class="room">
                                             <figure>
                                                 <figcaption>
                                                     <center><h5><a href="/vacation-rentals">Waterfront Rentals</a></h5></center>
                                                 </figcaption>
-                                                <a class="hover_effect h_blue h_link" href="/inland-resort/about">
-                                                    <img src="images/featured/Inland-Resort.JPG"  style="height:180px !important;" class="img-responsive" alt="Image">
+                                                <a class="hover_effect h_blue h_link" href="/waterfront-rentals/about">
+                                                    <img src="images/gallery/waterfront-rentals/6.JPG"  style="height:180px !important;" alt="Image">
                                                 </a>
                                                 
                                             </figure>
                                         </article><br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i><b>Apartments and Houses</b></li><br />
-   <li class="list-inline-item"><i class="fa fa-check"></i>Spacious apartments</li><br />
-   <li class="list-inline-item"><i class="fa fa-check"></i>On the water</li><br />
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br />
-<li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
-</ul><br>
+                                               <li class="list-inline-item"> Accommodation Type: <b>Short/Long Term</b></li><br />
+                                              
+                                        </ul><br>
 
                                     </div>
-                                    <div class="col-md-4">
-                                        <center><a href="{{ env('APP_URL') }}/book-now/landmark" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center>
+                                    <div class="col-md-3">
+                                        <center><a href="{{ env('APP_URL') }}/book-now/jensen-beach-motel" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center>
                                         <br />
                                         <article class="room">
                                             <figure>
                                                <figcaption>
-                                                    <center><h5><a href="/landmark/about">Jensen Beach Motel</a></h5></center>
+                                                    <center><h5><a href="/jensen-beach-motel/about">Jensen Beach Motel</a></h5></center>
                                                     
                                                 </figcaption>
-                                                <a class="hover_effect h_blue h_link" href="/landmark/about">
-                                                    <img src="images/gallery/landmark/landmark-6.JPG" class="img-responsive" style="height:180px !important;"alt="Image">
+                                                <a class="hover_effect h_blue h_link" href="/jensen-beach-motel/about">
+                                                    <img src="images/gallery/jensen-beach-motel/6.JPG" style="height:180px !important;"alt="Image">
                                                 </a>
                                                 
                                             </figure>
                                         </article>
                                         <br />
                                          <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i><b>Rooms</b></li><br/>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Suite style rooms</li><br/>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li><br>
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li><br>
-<li class="list-inline-item"><i class="fa fa-check"></i>Cable and High Speed Internet</li>
-</ul><br>
+                                           <li class="list-inline-item">Accommodation Type: <b>Rooms</b></li>
+                                           
+                                         </ul><br>
+
+                                    </div>
+                                     <div class="col-md-3">
+                                        <center><a href="{{ env('APP_URL') }}/book-now/vacation-rentals" class="button btn_lg btn_blue"><i class="fa fa-calendar"></i>BOOK NOW</a></center>
+                                        <br />
+                                        <article class="room">
+                                            <figure>
+                                               <figcaption>
+                                                    <center><h5><a href="/jensen-beach-motel/about">Vacation Rentals</a></h5></center>
+                                                    
+                                                </figcaption>
+                                                <a class="hover_effect h_blue h_link" href="/vacation-rentals/about">
+                                                    <img src="images/gallery/vacation-rentals/10.JPG" style="height:180px !important;"alt="Image">
+                                                </a>
+                                                
+                                            </figure>
+                                        </article>
+                                        <br />
+                                         <ul class="list-inline">
+                                           <li class="list-inline-item"> Accommodation Type: <b>Mobile Homes</b></li>
+                                        </ul><br>
 
                                     </div>
                                 </div>
                             </div>
                         </div> 
-                        
+                        <div class="col-md-12">
+                            <div id="about">
+                                <div class="main_title mt_wave a_center">
+                                    <h2>Welcome to Caribbean Shores Properties</h2>
+                                </div>
+                                <p class="main_description a_left">With the perfect balance of offerings between short term rentals, hotels, motels, and even long term rental options, Caribbean Shores Properties proves time and time again to be one of the most convenient ways to book a getaway on the Treasure Coast. Whether you’re trying to beat cold weather, or just looking for some time away from everyday life, Caribbean Shores Properties has just the right option for you and your family in a quality-packed, budget friendly package. Located in the heart of South Florida, just north of Palm Beach International Airport.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section> 
@@ -254,7 +266,7 @@
                             <div data-slider-id="features" id="features_slider" class="owl-carousel">
                                 <div><img src="images/Jensen.jpg" class="img-responsive" alt="Image"></div>
                                 <div><img src="images/home/1.jpg" class="img" alt="Image"></div>
-                                <div><img src="images/gallery/waterfront/Caribbean%20Shores-45.jpg" class="img-responsive" alt="Image"></div>
+                                <div><img src="images/gallery/waterfront-resort/45.jpg" class="img-responsive" alt="Image"></div>
                                 
                             </div>
                         </div>

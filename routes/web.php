@@ -18,7 +18,9 @@ Route::get('/about', function () {
     return view('about')->with('title','About Us');
 });
 //Gallery Routes 
-Route::get('/gallery','GalleryController@index');
+Route::get('/gallery', function () {
+    return redirect('/waterfront-resort/photos');
+});
 Route::get('{property}/photos','GalleryController@property');
 Route::get('{property}/rooms','RoomsController@property');
 Route::get('{property}/guestbook','GuestbookController@property');
@@ -27,16 +29,16 @@ Route::get('{property}/guestbook','GuestbookController@property');
 Route::get('book-now', function () {
     return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29');
 });
-Route::get('book-now/caribbean-shores', function () {
+Route::get('book-now/waterfront-resort', function () {
     return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29');
 });
-Route::get('book-now/landmark', function () {
+Route::get('book-now/jensen-beach-motel', function () {
     return redirect('https://hotels.cloudbeds.com/reservation/UI9XkQ');
 });
 Route::get('book-now/vacation-rentals', function () {
     return redirect('https://hotels.cloudbeds.com/reservation/W2eauH');
 });
-Route::get('book-now/inland-resort', function () {
+Route::get('book-now/waterfront-rentals', function () {
     return redirect('https://hotels.cloudbeds.com/reservation/VpPS1v#checkin=2019-10-28&checkout=2019-10-29');
 });
 
@@ -53,17 +55,17 @@ Route::get('room/{room}', function () {
 Route::get('/guestbook', 'GuestbookController@index');
 
 
-Route::get('/caribbean-shores/about', function () {
-    return view('about-car')->with('title','About Waterfront Resort');
+Route::get('/waterfront-resort/about', function () {
+    return view('about.waterfront-resort')->with('title','About Waterfront Resort');
 });
-Route::get('/landmark/about', function () {
-    return view('about-lan')->with('title','About Landmark Motel');
+Route::get('/jensen-beach-motel/about', function () {
+    return view('about.jensen-beach-motel')->with('title','About Jensen Beach Motel');
 });
 Route::get('/vacation-rentals/about', function () {
-    return view('abaout-vr')->with('title','About Vacation Rentals');
+    return view('about.vacation-rentals')->with('title','About Vacation Rentals');
 });
-Route::get('/inland-resort/about', function () {
-    return view('about-inland')->with('title','About RV Park');
+Route::get('/waterfront-rentals/about', function () {
+    return view('about.waterfront-rentals')->with('title','About Waterfront Rentals');
 });
 
 Route::get('/contact-us', function () {
