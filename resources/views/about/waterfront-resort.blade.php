@@ -84,7 +84,7 @@ Our cottages feature the same amazing waterfront views and are 2/2 or 1/2 with k
                                 $rooms_photos = DB::table('gallery')->where('rooms_id',$room->id)->inRandomOrder()->limit(1)->get(); ?>
                                 @foreach($rooms_photos as $room_photo)
                                                 
-                                                    <img src="{{ env('APP_URL') }}/images/{{$room_photo->photo_dir}}/{{$room_photo->photo_file_nm}}" class="img-responsive" alt="Image">
+                                                   <a class="hover_effect h_blue h_link" href="{{ env('APP_URL')}}/room/{{$room->id}}"> <img src="{{ env('APP_URL') }}/images/{{$room_photo->photo_dir}}/{{$room_photo->photo_file_nm}}" class="img-responsive" alt="Image"></a>
                                                 @endforeach
                                                 <figcaption>
                                                     <h5>{{$room->room_name}}</h5>
@@ -97,12 +97,16 @@ Our cottages feature the same amazing waterfront views and are 2/2 or 1/2 with k
                                     @endforeach
                                     
                                 </div>
+
                             </div>
-                        </div> 
+                        </div><br />
                         
-                    </div>
                 </div>
-                <br />
+                <div class="container">
+                    <div class="mt40 a_center">
+                        <a class="button btn_sm btn_dark upper" href="{{ env('APP_URL') }}/waterfront-resort/rooms">View all Available Spaces</a>
+                    </div> 
+                    <br />
                 <div class="container">
                    <div class="row">
                     

@@ -24,7 +24,7 @@
                     <h1>{{$prop->property_name}} Rooms</h1>
                     <ol class="breadcrumb">
                         <li><a href="/">Home</a></li>
-                        <li><a href="/{{$prop->property_pretty_name}}">{{$prop->property_name}}</a></li>
+                        <li><a href="/{{$prop->property_pretty_name}}/about">{{$prop->property_name}}</a></li>
                         <li>Rooms</li>
                     </ol>
                     @endforeach
@@ -46,7 +46,7 @@
                               <?php
                                 $photos = DB::table('gallery')->where('rooms_id',$room->id)->inRandomOrder()->limit(1)->get(); ?>
                               @foreach($photos as $photo)
-                             <img src="/images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}" class="img-responsive" alt="Image">
+                             <img src="/images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}" class="img-responsive" alt="Image" style="height: 180px !important;">
                              @endforeach
                              
                              </a>
@@ -56,10 +56,7 @@
                                 <h3><a href="room.html">{{$room->room_name}}</a></h3>
                                 <span>${{$room->default_price}}/ night</span>
                                 <p>{{$room->description}}</p>
-                                <div class="room_services">
-                                   <i class="fa fa-coffee" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Breakfast Included" data-original-title="Breakfast"></i> 
-                                    <i class="fa fa-cutlery" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Restaurant" data-original-title="Zante Restaurant"></i> 
-                                </div>
+                                
                              </div>
                           </div>
                        </div>

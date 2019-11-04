@@ -311,8 +311,8 @@
                 <div id="gallery_slider" class="owl-carousel image-gallery">
                    
                     <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront/Caribbean Shores-57.jpg">
-                            <img src="images/gallery/waterfront/Caribbean Shores-57.jpg" alt="Image">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront-resort/58.jpg">
+                            <img src="/images/gallery/waterfront-resort/58.jpg" alt="Image">
                         </a>
                         <div class="gallery_item_info">
                             <h4>Caribbean Shores Waterfront Resort</h4>
@@ -321,18 +321,18 @@
                         
                     </div>
                      <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront/Caribbean Shores-38.jpg">
-                            <img src="/images/gallery/waterfront/Caribbean Shores-38.jpg" alt="Image">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/vacation-rentals/10.JPG">
+                            <img src="/images/gallery/vacation-rentals/10.JPG" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
-                            <h4>Osperey Cottage</h4>
+                            <h4>Vacation Rentals</h4>
                            
                         </div>
                         
                     </div>
                     <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/landmark-f.JPG">
-                            <img src="/images//gallery/landmark-f.JPG"  style="height:255px !important; width:347px !important;" alt="Image">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/jensen-beach-motel/6.JPG">
+                            <img src="/images/gallery/jensen-beach-motel/6.JPG"  style="height:255px !important; width:347px !important;" alt="Image">
                         </a>
                         <div class="gallery_item_info">
                             <h4>Jensen Beach Motel</h4>
@@ -341,21 +341,21 @@
                         
                     </div>
                      <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-4.JPG">
-                            <img src="/images/gallery/inland-resort/Inland Resort-4.JPG" alt="Image" style="height:255px !important; width:347px !important;">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront-resort/57.jpg">
+                            <img src="/images/gallery/waterfront-resort/57.jpg" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
-                            <h4>Seagull Cottage</h4>
+                            <h4>Our Pool</h4>
                            
                         </div>
                         
                     </div>
                      <div class="item">
-                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/inland-resort/Inland Resort-2.JPG">
-                            <img src="/images/gallery/inland-resort/Inland Resort-2.JPG" alt="Image" style="height:255px !important; width:347px !important;">
+                        <a class="hover_effect h_yellow h_lightbox" href="/images/gallery/waterfront-rentals/6.JPG">
+                            <img src="/images/gallery/waterfront-rentals/6.JPG" alt="Image" style="height:255px !important; width:347px !important;">
                         </a>
                         <div class="gallery_item_info">
-                            <h4>Waterfront Resort</h4>
+                            <h4>Waterfront Rentals</h4>
                            
                         </div>
                         

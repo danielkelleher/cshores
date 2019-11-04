@@ -22,8 +22,10 @@
                         <div class="col-md-6 col-sm-6">
                             <h1>{{ $room->room_name}}</h1>
                             <ol class="breadcrumb">
+                                 <?php $property = DB::table('properties')->where('id',$room->properties_id)->first(); ?>
                                 <li><a href="/">Home</a></li>
-                               
+                                <li><a href="{{ env('APP_URL') }}/{{ $property->property_pretty_name }}/about">{{$property->property_name}}</a></li>
+                                <li><a href="{{ env('APP_URL') }}/{{ $property->property_pretty_name }}/rooms">Rooms</a></li>
                                 <li>{{$room->room_name}}</li>
                             </ol>
                         </div>
@@ -68,13 +70,11 @@
                             </div>
                         </div>
                         <div class="main_title mt50">
-                            <h2>ABOUT {{$room->room_name}}</h2>
+                            <h2>ABOUT <?php echo strtoupper($room->room_name); ?></h2>
                         </div>
                         <p>{{$room->description}}</p>
                         
-                        <p> at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius</p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <p>{{$property->description}}</p>
                         
                         <div class="main_title t_style a_left s_title mt50">
                             <div class="c_inner">
@@ -85,26 +85,25 @@
                             <div class="all_facility_list">
                                 <div class="col-sm-4 nopadding">
                                     <ul class="list-unstyled">
-                                        <li><i class="fa fa-check"></i>Double Bed</li>
-                                        <li><i class="fa fa-check"></i>80 Sq mt</li>
+                                        <li><i class="fa fa-check"></i>Double Bed Available</li>
+                                       
                                         <li><i class="fa fa-check"></i>6 Persons</li>
-                                        <li><i class="fa fa-check"></i>Free Internet</li>
+                                        <li><i class="fa fa-check"></i>Cable TV</li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-4 nopadding">
                                     <ul class="list-unstyled">
                                         <li><i class="fa fa-check"></i>Free Wi-Fi</li>
-                                        <li><i class="fa fa-check"></i>Breakfast Include</li>
-                                        <li><i class="fa fa-check"></i>Private Balcony</li>
-                                        <li class="no"><i class="fa fa-times"></i>Free Newspaper</li>
+                                       
+                                       
                                     </ul>
                                 </div>
                                 <div class="col-sm-4 nopadding_left">
                                     <ul class="list-unstyled">
-                                        <li class="no"><i class="fa fa-times"></i>Flat Screen Tv</li>
-                                        <li><i class="fa fa-check"></i>Full Ac</li>
-                                        <li class="no"><i class="fa fa-times"></i>Beach View</li>
-                                        <li><i class="fa fa-check"></i>Room Service</li>
+                                        <li><i class="fa fa-check"></i>Flat Screen Tv</li>
+                                        <li><i class="fa fa-check"></i>A/C</li>
+                                        <li><i class="fa fa-check"></i>Waterfront View Available</li>
+                                       
                                     </ul>
                                 </div>
                             </div>
@@ -115,7 +114,7 @@
                                     <h2 class="c_title">SIMILAR ROOMS</h2>
                                 </div>
                             </div>
-                            <div class="row">
+<!--                             <div class="row">
                                 <div class="col-md-4">
                                     <article>
                                         <figure>
@@ -149,86 +148,33 @@
                                         </figure>
                                     </article>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
-                    @endforeach
+                    
                     <div class="col-md-4">
                         <div class="sidebar">
                             <aside class="widget">
                                 <div class="vbf">
                                     <h2 class="form_title"><i class="fa fa-calendar"></i> BOOK ONLINE</h2>
                                     <form id="booking-form" class="inner">
-                                        <div class="form-group">
-                                            <input class="form-control" name="booking-name" placeholder="Enter Your Name" type="text">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" name="booking-email" placeholder="Enter Your Email Address" type="email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" name="booking-phone" placeholder="Enter Your Phone Number" type="text">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="form_select">
-                                                <select name="booking-roomtype" class="form-control" title="Select Room Type" data-header="Room Type" disabled>
-                                                    <option value="Single Room" selected>Single Room</option>
-                                                    <option value="Double Room">Double Room</option>
-                                                    <option value="Deluxe Room">Deluxe Room</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-6 col-sm-6 col-xs-12 nopadding">
-                                            <div class="form_select">
-                                                <select name="booking-adults" class="form-control md_noborder_right" title="Adults" data-header="Adults">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-6 col-sm-6 col-xs-12 nopadding">
-                                            <div class="form_select">
-                                                <select name="booking-children" class="form-control" title="Children" data-header="Children">
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-6 col-sm-6 col-xs-12 nopadding">
-                                            <div class="input-group">
-                                                <div class="form_date">
-                                                    <input type="text" class="datepicker form-control md_noborder_right" name="booking-checkin" placeholder="Arrival Date" readonly>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-md-6 col-sm-6 col-xs-12 nopadding">
-                                            <div class="input-group">
-                                                <div class="form_date">
-                                                    <input type="text" class="datepicker form-control" name="booking-checkout" placeholder="Departure Date" readonly>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
+                                        <a href="{{ env('APP_URL') }}/book-now/{{ $property->property_pretty_name }}">
                                         <button class="button btn_lg btn_blue btn_full" type="submit">BOOK A ROOM NOW</button>
-                                        <div class="a_center mt10">
-                                            <a href="booking-form.html" class="a_b_f">Advanced Booking Form</a>
-                                        </div>
+                                        </a>
                                     </form>
                                 </div>
                             </aside>
+                            @endforeach
                             <aside class="widget">
                                 <h4>NEED HELP?</h4>
                                 <div class="help">
-                                    If you have any question please don't hesitate to contact us
-                                    <div class="phone"><i class="fa  fa-phone"></i><a href="tel:18475555555"> 1-888-123-4567 </a></div>
-                                    <div class="email"><i class="fa  fa-envelope-o "></i><a href="mailto:contact@site.com">contact@site.com</a> or use <a href="contact.html"> contact form</a></div>
+                                    If you have any questions, please don't hesitate to contact us:
+                                    <div class="phone"><i class="fa  fa-phone"></i><a href="tel:7729191030"> 1-772-910-1030 </a></div>
+                                    <div class="email"><i class="fa  fa-envelope-o "></i><a href="mailto:contact@caribbeanshoresproperties.com">contact@caribbeanshoresproperties.com</a>.</div>
                                 </div>
                             </aside>
-                            <aside class="widget">
+                            <!-- <aside class="widget">
                                 <h4>Latest Posts</h4>
                                 <div class="latest_posts">
                                     <article class="latest_post">
@@ -287,7 +233,7 @@
                                         </div>
                                     </article>
                                 </div>
-                            </aside>
+                            </aside> -->
                         </div>
                     </div>
                 </div>
