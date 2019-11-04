@@ -14,22 +14,23 @@
         @include('elements.header')
 
         <!-- =========== PAGE TITLE ========== -->
+        @foreach($rooms as $room)
         <div class="page_title gradient_overlay" style="background: url(images/page_title_bg.jpg);">
             <div class="container">
                 <div class="inner">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <h1>Single Room</h1>
+                            <h1>{{ $room->room_name}}</h1>
                             <ol class="breadcrumb">
                                 <li><a href="/">Home</a></li>
-                                <li>Rooms</li>
-                                <li>Example Room</li>
+                               
+                                <li>{{$room->room_name}}</li>
                             </ol>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="price">
                                 <div class="inner">
-                                    €90 <span>per night</span>
+                                    ${{$room->default_price}} <span>per night</span>
                                 </div>
                             </div>
                         </div>
@@ -45,78 +46,31 @@
                     <div class="col-md-8">
                         <div class="slider">
                             <div id="slider-larg" class="owl-carousel image-gallery">
+                                <?php
+                                $photos = DB::table('gallery')->where('rooms_id',$room->id)->get(); ?>
+                                 @foreach($photos as $photo)
                                 <!-- ITEM -->
                                 <div class="item lightbox-image-icon">
-                                    <a href="/images/rooms/single-room/single-room1.jpg" class="hover_effect h_lightbox h_blue">
-                                        <img class="img-responsive" src="/images/rooms/single-room/single-room1.jpg" alt="Image">
+                                    <a href="{{ env('APP_URL') }}/images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}" class="hover_effect h_lightbox h_blue">
+                                        <img class="img-responsive" src="{{ env('APP_URL') }}/images/{{$photo->photo_dir}}/{{$photo->photo_file_nm}}" alt="Image" style="height: 500px !important;">
                                     </a>
                                 </div>
-                                <!-- ITEM -->
-                                <div class="item lightbox-image-icon">
-                                    <a href="/images/rooms/single-room/single-room2.jpg" class="hover_effect h_lightbox h_blue">
-                                        <img class="img-responsive" src="/images/rooms/single-room/single-room2.jpg" alt="Image">
-                                    </a>
-                                </div>
-                                <!-- ITEM -->
-                                <div class="item lightbox-image-icon">
-                                    <a href="/images/rooms/single-room/single-room3.jpg" class="hover_effect h_lightbox h_blue">
-                                        <img class="img-responsive" src="/images/rooms/single-room/single-room3.jpg" alt="Image">
-                                    </a>
-                                </div>
-                                <!-- ITEM -->
-                                <div class="item lightbox-image-icon">
-                                    <a href="/images/rooms/single-room/single-room4.jpg" class="hover_effect h_lightbox h_blue">
-                                        <img class="img-responsive" src="/images/rooms/single-room/single-room4.jpg" alt="Image">
-                                    </a>
-                                </div>
-                                <!-- ITEM -->
-                                <div class="item lightbox-image-icon">
-                                    <a href="/images/rooms/single-room/single-room5.jpg" class="hover_effect h_lightbox h_blue">
-                                        <img class="img-responsive" src="/images/rooms/single-room/single-room5.jpg" alt="Image">
-                                    </a>
-                                </div>
-                                <!-- ITEM -->
-                                <div class="item lightbox-image-icon">
-                                    <a href="/images/rooms/single-room/single-room6.jpg" class="hover_effect h_lightbox h_blue">
-                                        <img class="img-responsive" src="/images/rooms/single-room/single-room6.jpg" alt="Image">
-                                    </a>
-                                </div>
-                                <!-- ITEM -->
-                                <div class="item lightbox-image-icon">
-                                    <a href="/images/rooms/single-room/single-room7.jpg" class="hover_effect h_lightbox h_blue">
-                                        <img class="img-responsive" src="/images/rooms/single-room/single-room7.jpg" alt="Image">
-                                    </a>
-                                </div>
-                                <!-- ITEM -->
-                                <div class="item  lightbox-image-icon">
-                                    <a href="images/rooms/single-room/single-room8.jpg" class="hover_effect h_lightbox h_blue">
-                                        <img class="img-responsive" src="/images/rooms/single-room/single-room8.jpg" alt="Image">
-                                    </a>
-                                </div>
+                                @endforeach
+                                
                             </div>
                             <div id="thumbs" class="owl-carousel">
+                                 <?php
+                                $photos2 = DB::table('gallery')->where('rooms_id',$room->id)->get(); ?>
+                                 @foreach($photos2 as $photo2)
                                 <!-- ITEM -->
-                                <div class="item"><img class="img-responsive" src="/images/rooms/single-room/single-room-thumb1.jpg" alt="Image"></div>
-                                <!-- ITEM -->
-                                <div class="item"><img class="img-responsive" src="/images/rooms/single-room/single-room-thumb2.jpg" alt="Image"></div>
-                                <!-- ITEM -->
-                                <div class="item"><img class="img-responsive" src="/images/rooms/single-room/single-room-thumb3.jpg" alt="Image"></div>
-                                <!-- ITEM -->
-                                <div class="item"><img class="img-responsive" src="/images/rooms/single-room/single-room-thumb4.jpg" alt="Image"></div>
-                                <!-- ITEM -->
-                                <div class="item"><img class="img-responsive" src="/images/rooms/single-room/single-room-thumb5.jpg" alt="Image"></div>
-                                <!-- ITEM -->
-                                <div class="item"><img class="img-responsive" src="/images/rooms/single-room/single-room-thumb6.jpg" alt="Image"></div>
-                                <!-- ITEM -->
-                                <div class="item"><img class="img-responsive" src="/images/rooms/single-room/single-room-thumb7.jpg" alt="Image"></div>
-                                <!-- ITEM -->
-                                <div class="item"><img class="img-responsive" src="/images/rooms/single-room/single-room-thumb8.jpg" alt="Image"></div>
+                                <div class="item"><img class="img-responsive" src="{{ env('APP_URL') }}/images/{{$photo2->photo_dir}}/{{$photo2->photo_file_nm}}" alt="Image"></div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="main_title mt50">
-                            <h2>ABOUT HOTEL ZANTE</h2>
+                            <h2>ABOUT {{$room->room_name}}</h2>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+                        <p>{{$room->description}}</p>
                         
                         <p> at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius</p>
                         
@@ -198,6 +152,7 @@
                             </div>
                         </div>
                     </div>
+                    @endforeach
                     <div class="col-md-4">
                         <div class="sidebar">
                             <aside class="widget">

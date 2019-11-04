@@ -20,4 +20,18 @@ class RoomsController extends Controller
 
         return view('rooms_property', compact('rooms','property'))->with('title','Rooms');
     }
+     public function single($room)
+    {
+        $rooms = DB::table('rooms')
+                                       
+                                        
+                                        ->where('id','=',$room)
+                                        
+                                        ->get();
+                                        
+                                     
+
+
+        return view('room', compact('rooms'))->with('title','Room Detail');
+    }
 }

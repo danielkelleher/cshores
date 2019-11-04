@@ -49,9 +49,8 @@ Route::get('happenings', function () {
 Route::get('happenings/post', function () {
     return view('blog-post')->with('title','Local Events');
 });
-Route::get('room/{room}', function () {
-    return view('room')->with('title','Room Details');
-});
+Route::get('room/{room}', 'RoomsController@single');
+
 Route::get('/guestbook', 'GuestbookController@index');
 
 
@@ -74,3 +73,4 @@ Route::get('/contact-us', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

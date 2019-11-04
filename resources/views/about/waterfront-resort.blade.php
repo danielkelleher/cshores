@@ -74,76 +74,28 @@ Our cottages feature the same amazing waterfront views and are 2/2 or 1/2 with k
                                 </div> 
                                      
                                 <div class="row">
+                                    <?php
+                                $rooms = DB::table('rooms')->where('properties_id','1')->limit(3)->get(); ?>
+                                @foreach($rooms as $room)
                                     <div class="col-md-4">
                                         <article class="room">
                                             <figure>
+                                                <?php
+                                $rooms_photos = DB::table('gallery')->where('rooms_id',$room->id)->inRandomOrder()->limit(1)->get(); ?>
+                                @foreach($rooms_photos as $room_photo)
                                                 
-                                                
-                                                    <img src="{{ env('APP_URL') }}/images/gallery/waterfront/rooms/double-queen.jpg" class="img-responsive" alt="Image">
-                                                
+                                                    <img src="{{ env('APP_URL') }}/images/{{$room_photo->photo_dir}}/{{$room_photo->photo_file_nm}}" class="img-responsive" alt="Image">
+                                                @endforeach
                                                 <figcaption>
-                                                    <h5>Deluxe</h5>
+                                                    <h5>{{$room->room_name}}</h5>
                                                     
                                                 </figcaption>
                                             </figure>
-                                        </article><br />
-                                        <ul class="list-inline">
-   <li class="list-inline-item"><i class="fa fa-check"></i>Maximum Capacity: 5</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Sleeper-sofa</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Mini-fridge</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>2 bathrooms</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Flat screen TV</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Double Queen and Single King Rooms</li>
-</ul>
+                                        </article>
+                                        
                                     </div>
-                                    <div class="col-md-4">
-                                        <article class="room">
-                                            <figure>
-                                                
-                                                
-                                                    <img src="{{ env('APP_URL') }}/images/gallery/waterfront/rooms/king.jpg" class="img-responsive" alt="Image">
-                                                
-                                                <figcaption>
-                                                    <h5>King</h5>
-                                                    
-                                                </figcaption>
-                                            </figure>
-                                        </article><br />
-                                        <ul class="list-inline">
-    <li class="list-inline-item"><i class="fa fa-check"></i>Maximum Capacity: 4</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Lounge area</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Dinette</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>2 bathrooms</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Flat screen TV</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
-</ul>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <article class="room">
-                                            <figure>
-                                                
-                                                
-                                                    <img src="{{ env('APP_URL') }}/images/gallery/waterfront/rooms/queen.jpg" class="img-responsive" alt="Image">
-                                                
-                                                <figcaption>
-                                                    <h5>Queen</h5>
-                                                    
-                                                </figcaption>
-                                            </figure>
-                                        </article><br />
-                                        <ul class="list-inline">
-    <li class="list-inline-item"><i class="fa fa-check"></i>Maximum Capacity: 2</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Lounge area</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Dinette</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>2 bathrooms</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Flat screen TV</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Studio rooms</li>
-   <li class="list-inline-item"><i class="fa fa-check"></i>Onsite Pool</li>
-<li class="list-inline-item"><i class="fa fa-check"></i>Onsite Laundry</li>
-</ul>
-                                    </div>
+                                    @endforeach
+                                    
                                 </div>
                             </div>
                         </div> 
